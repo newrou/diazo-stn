@@ -1,0 +1,15 @@
+%mem=400MW
+%nproc=7
+#p Temperature=298.15 opt=(maxcycles=4096) SCF=(maxcycles=1024) freq UB3LYP/aug-cc-pVDZ
+
+CH3-N2-UB3LYP-aug-cc-pVDZ-Duplet
+
+0  2
+  C   -1.254754   0.002898   -0.184109
+  H   -1.758392   0.984959   -0.204593
+  H   -1.574652   -0.702014   -0.568531
+  H   -1.769484   -0.389201   0.966536
+  N   0.186948   0.001922   -0.030648
+  N   1.641972   0.090203   -0.135838
+
+nprocshared=7

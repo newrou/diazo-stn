@@ -1,0 +1,20 @@
+%chk=Pyrrole-2+-RB3LYP-aug-cc-pVDZ-Singlet.chk
+%mem=400MW
+%nproc=7
+#p Temperature=298.15 opt freq RB3LYP/aug-cc-pVDZ
+
+Pyrrole-2+-RB3LYP-aug-cc-pVDZ-Singlet
+
+1 1
+C           0.03350         0.83070         0.00610
+C          -0.77500        -0.16970        -0.52550
+H          -0.37860        -1.10160        -0.87100
+C          -2.10630         0.26720        -0.48250
+H          -2.92030        -0.34190        -0.81600
+C          -2.10320         1.58010         0.09630
+H          -2.98400         2.15860         0.28190
+N          -0.77000         1.90120         0.38760
+H          -0.45050         2.75460         0.79960
+
+
+nprocshared=7

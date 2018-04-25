@@ -1,0 +1,18 @@
+%chk=Pyrazole-5+-UB3LYP-aug-cc-pVDZ-Singlet.chk
+%mem=400MW
+%nproc=7
+#p Temperature=298.15 opt freq UB3LYP/aug-cc-pVDZ
+
+Pyrazole-5+-UB3LYP-aug-cc-pVDZ-Singlet
+
+1  1
+  C   -0.052599   -1.013583   -0.017167
+  N   -1.197214   -0.316311   -0.047256
+  H   -2.181528   -0.498821   0.009485
+  C   0.719400   0.849377   -0.027496
+  H   1.330652   1.678756   -0.001985
+  C   1.222151   -0.568991   0.040743
+  H   2.128048   -1.075420   -0.026926
+  N   -0.586747   0.940789   0.009238
+
+nprocshared=7

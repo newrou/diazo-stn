@@ -1,0 +1,15 @@
+%chk=CH3+-UB3LYP-aug-cc-pVDZ-Singlet.chk
+%mem=400MW
+%nproc=7
+#p Temperature=298.15 opt freq UB3LYP/aug-cc-pVDZ
+
+CH3+-UB3LYP-aug-cc-pVDZ-Singlet
+
+1 1
+C          -0.09870        -0.14550         0.05600
+H           0.25790         0.35890         0.92970
+H           0.25790         0.35890        -0.81760
+H          -1.16870        -0.14550         0.05600
+
+
+nprocshared=7
