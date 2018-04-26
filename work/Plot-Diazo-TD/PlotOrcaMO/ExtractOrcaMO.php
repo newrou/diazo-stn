@@ -56,7 +56,7 @@ function trace_MMO( $m, $Prop, $flog, $fout ) {
 		    if($i>16 && $i<23) {
 			fprintf($flog,"  *** %ld Swap %ld <=> %ld [%ld <=> %ld] ",$j,$i,$i+1,$cmap[$i],$cmap[$i+1]);
 			fprintf($flog,"      (%f %f %f) [%f %f] [%f %f] [%f %f] ",$d1,$d2,$d3,$y11,$y21,$y12,$y22,$y13,$y23);
-			fprintf($flog,"      ang %f %f %f %f \n",$ang1,$ang2,$ang3,$ang4);
+////			fprintf($flog,"      ang %f %f %f %f \n",$ang1,$ang2,$ang3,$ang4);
 //			fprintf($flog,"           cmap %ld =[",$j); for( $z=0; $z<$max_i; $z++) fprintf($flog," %ld",$cmap[$z]); fprintf($flog," ]\n");
 		    }
 		    $swap = $cmap[$i];
@@ -64,8 +64,8 @@ function trace_MMO( $m, $Prop, $flog, $fout ) {
 		    $cmap[$i+1] = $swap;
 		    if($i>16 && $i<23) {
 //			fprintf($flog,"     ### [%ld %ld %ld %ld %ld %ld] ",$cmap[$i-2],$cmap[$i-1],$cmap[$i],$cmap[$i+1],$cmap[$i+2],$cmap[$i+3]);
-			fprintf($flog,"     ### [%ld %ld %ld %ld %ld %ld] ",$cmap[17],$cmap[18],$cmap[19],$cmap[20],$cmap[21],$cmap[22]);
-			fprintf($flog,"           cmap %ld =[",$j); for( $z=0; $z<$max_i; $z++) fprintf($flog," %ld",$cmap[$z]); fprintf($flog," ]\n");
+////			fprintf($flog,"     ### [%ld %ld %ld %ld %ld %ld] ",$cmap[17],$cmap[18],$cmap[19],$cmap[20],$cmap[21],$cmap[22]);
+////			fprintf($flog,"           cmap %ld =[",$j); for( $z=0; $z<$max_i; $z++) fprintf($flog," %ld",$cmap[$z]); fprintf($flog," ]\n");
 		    }
 //		    $map[$j]=$cmap;
 		}
@@ -77,19 +77,24 @@ function trace_MMO( $m, $Prop, $flog, $fout ) {
 //    for( $z=0; $z<$max_i; $z++ ) { $ind=$map[$j-1][$z]; fprintf($fout," %f;", $m[$j][$ind]['Eh']); }
 
 //    fprintf($flog,"cmap %ld =[",$j); for( $i=0; $i<$max_i; $i++) fprintf($flog," %ld",$cmap[$i]); fprintf($flog," ]\n");
-    fprintf($flog,"$ %ld [%ld %ld %ld %ld %ld %ld] \n", $j, $cmap[17], $cmap[18], $cmap[19], $cmap[20], $cmap[21], $cmap[22] );
-    fprintf($flog,"@; %f; %f; %f; %f; %f; %f; %f; \n", $Prop[$j]['d'], $m[$j][$cmap[17]]['Eh'], $m[$j][$cmap[18]]['Eh'], $m[$j][$cmap[19]]['Eh'], $m[$j][$cmap[20]]['Eh'], $m[$j][$cmap[21]]['Eh'], $m[$j][$cmap[22]]['Eh'] );
+////    fprintf($flog,"$ %ld [%ld %ld %ld %ld %ld %ld] \n", $j, $cmap[17], $cmap[18], $cmap[19], $cmap[20], $cmap[21], $cmap[22] );
+////    fprintf($flog,"@; %f; %f; %f; %f; %f; %f; %f; \n", $Prop[$j]['d'], $m[$j][$cmap[17]]['Eh'], $m[$j][$cmap[18]]['Eh'], $m[$j][$cmap[19]]['Eh'], $m[$j][$cmap[20]]['Eh'], $m[$j][$cmap[21]]['Eh'], $m[$j][$cmap[22]]['Eh'] );
  }
  fprintf($flog,"cmap %ld =[",$j); for( $i=0; $i<$max_i; $i++) fprintf($flog," %ld",$cmap[$i]); fprintf($flog," ]\n");
 
  for( $j=0; $j<$max_j; $j++) {
     fprintf($fout," %7.4f; %17.9f; %17.9f; %17.9f;  ", $Prop[$j]['d'], $Prop[$j]['E'], $Prop[$j]['HOMO'], $Prop[$j]['LUMO'] );
+    $SumE=0.0;
+    $SumEz=0.0;
     for( $i=0; $i<$max_i; $i+=1) {
 	$a=0;
 	for( $z=0; $z<$max_i; $z++ ) if( $map[$j][$z]==$i ) {$a=$z; break; }
 	fprintf($fout," %f;", $m[$j][$a]['Eh']);
+	$SumE+=$m[$j][$a]['Eh'];
+	if($i<27) $SumEz+=$m[$j][$a]['Eh'];
 	}
     fprintf($fout,"\n");
+    fprintf($flog,"%03ld; %7.4f; %17.9f; %17.9f; %17.9f; %17.9f;\n", $j, $Prop[$j]['d'], $Prop[$j]['E'], $SumE, $SumEz, $SumE-$SumEz );
     }
 
  return $map;

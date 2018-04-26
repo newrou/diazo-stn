@@ -74,7 +74,7 @@ unset multiplot
 
 
 set terminal pngcairo  transparent enhanced font "arial,32" fontscale 1.0 size 2000,2000
-set output "Ph-N2+-MO-rmo.png"
+set output "Ph-N2+-MO-rmo-color.png"
 set multiplot
 set xrange [0.9:6.5]
 set yrange [-1.5:-0.4]
@@ -92,6 +92,36 @@ do for [i=5:24:1] { plot 'Ph+.mo' using 1:i with lines ls 2 lw 3 notitle }
 do for [i=25:182:1] { plot 'Ph+.mo' using 1:i with lines ls 1 lw 3 notitle }
 do for [i=5:11:1] { plot 'N2.mo' using 1:i with lines ls 2 lw 3 notitle }
 do for [i=12:45:1] { plot 'N2.mo' using 1:i with lines ls 1 lw 3 notitle }
+#plot 'Ph-N2+.rmo' using 1:($2+340.0) with lines ls 3 lw 3 ti "dE, Hartree"
+unset multiplot
+
+
+set terminal pngcairo  transparent enhanced font "arial,32" fontscale 1.0 size 2000,2000
+set output "Ph-N2+-MO-rmo.png"
+set multiplot
+set xrange [0.9:6.5]
+set yrange [-1.5:-0.4]
+set xlabel "Distance C-N, A" font "Helvetica-Bold,32"
+set ylabel "E, Hartree" font "Helvetica-Bold,32"
+rgb(r,g,b) = int(r)*65536 + int(g)*256 + int(b)
+unset label
+set label "Ph-N_2^+" at 4.4,-1.3 left font "Helvetica,32"
+set label "Ph^+" at 5.15,-1.3 left font "Helvetica,32"
+set label "N_2" at 5.55,-1.3 left font "Helvetica,32"
+do for [i=7:12:1] { plot 'Ph-N2+.rmo' using 1:i with lines ls 2 lw 4 notitle }
+do for [i=14:21:1] { plot 'Ph-N2+.rmo' using 1:i with lines ls 2 lw 4 notitle }
+do for [i=23:23:1] { plot 'Ph-N2+.rmo' using 1:i with lines ls 2 lw 4 notitle }
+do for [i=25:25:1] { plot 'Ph-N2+.rmo' using 1:i with lines ls 2 lw 4 notitle }
+do for [i=29:31:1] { plot 'Ph-N2+.rmo' using 1:i with lines ls 2 lw 4 notitle }
+plot 'Ph-N2+.rmo' using 1:5 with lines ls 4 lw 4 notitle
+plot 'Ph-N2+.rmo' using 1:6 with lines ls 4 lw 4 notitle
+plot 'Ph-N2+.rmo' using 1:13 with lines ls 4 lw 4 notitle
+plot 'Ph-N2+.rmo' using 1:22 with lines ls 4 lw 4 notitle
+plot 'Ph-N2+.rmo' using 1:24 with lines ls 4 lw 4 notitle
+plot 'Ph-N2+.rmo' using 1:27 with lines ls 4 lw 4 notitle
+plot 'Ph-N2+.rmo' using 1:28 with lines ls 4 lw 4 notitle
+do for [i=5:24:1] { plot 'Ph+.mo' using 1:i with lines ls 2 lw 4 notitle }
+do for [i=5:11:1] { plot 'N2.mo' using 1:i with lines ls 4 lw 4 notitle }
 #plot 'Ph-N2+.rmo' using 1:($2+340.0) with lines ls 3 lw 3 ti "dE, Hartree"
 unset multiplot
 
