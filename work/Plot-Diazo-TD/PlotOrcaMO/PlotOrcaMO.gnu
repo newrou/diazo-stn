@@ -13,7 +13,7 @@ set output "Ph-N2+-LUMO-HOMO.png"
 set yrange [0:700]
 set xlabel "Distance C-N, A" font "Helvetica-Bold,18"
 set ylabel "dE, kJ/mol" font "Helvetica-Bold,18"
-plot 'Ph-N2+.mo' using 1:(2625.5*($2+341.0)) with lines ls 3 lw 3 ti "E", \
+plot 'Ph-N2+.mo' using 1:(2625.5*($2+341.0)) with lines ls 3 lw 7 ti "E", \
  'Ph-N2+.mo' using 1:(2625.5*$3+1290) with lines ls 2 lw 3 ti "HOMO", \
  'Ph-N2+.mo' using 1:(2625.5*$4+1290) with lines ls 1 lw 3 ti "LUMO", \
  'Ph-N2+.mo' using 1:(2625.5*($4-$3)) with lines ls 4 lw 3 ti "LUMO-HOMO"
