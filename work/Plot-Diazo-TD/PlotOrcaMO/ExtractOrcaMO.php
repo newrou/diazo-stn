@@ -16,7 +16,7 @@ function ReadMO($fin, &$HOMO, &$LUMO) {
 
 function vangle( $x1, $y1, $x2, $y2 ) { return 57.3*acos( ($x1*$x2+$y1*$y2)/(sqrt($x1*$x1+$y1*$y1)*sqrt($x2*$x2+$y2*$y2))); }
 
-function trace_MMO( $m, $Prop, $flog, $fout ) {
+function trace_MMO( $m, $Prop, $flog, $fout, $fmap ) {
  $map = array();
  $cmap = array();
  $t = array();
@@ -84,16 +84,19 @@ function trace_MMO( $m, $Prop, $flog, $fout ) {
 
  for( $j=0; $j<$max_j; $j++) {
     fprintf($fout," %7.4f; %17.9f; %17.9f; %17.9f;  ", $Prop[$j]['d'], $Prop[$j]['E'], $Prop[$j]['HOMO'], $Prop[$j]['LUMO'] );
+    fprintf($fmap," %7.4f; %17.9f; %17.9f; %17.9f;  ", $Prop[$j]['d'], $Prop[$j]['E'], $Prop[$j]['HOMO'], $Prop[$j]['LUMO'] );
     $SumE=0.0;
     $SumEz=0.0;
     for( $i=0; $i<$max_i; $i+=1) {
 	$a=0;
 	for( $z=0; $z<$max_i; $z++ ) if( $map[$j][$z]==$i ) {$a=$z; break; }
 	fprintf($fout," %f;", $m[$j][$a]['Eh']);
+	fprintf($fmap," %ld;", $a);
 	$SumE+=$m[$j][$a]['Eh'];
 	if($i<27) $SumEz+=$m[$j][$a]['Eh'];
 	}
     fprintf($fout,"\n");
+    fprintf($fmap,"\n");
     fprintf($flog,"%03ld; %7.4f; %17.9f; %17.9f; %17.9f; %17.9f;\n", $j, $Prop[$j]['d'], $Prop[$j]['E'], $SumE, $SumEz, $SumE-$SumEz );
     }
 
@@ -110,6 +113,7 @@ $Prop=array();
 $n=0;
 $flog = fopen('ExtractOrcaMO.log', "w");
 $fout = fopen('ExtractOrcaMO.mo', "w");
+$fmap = fopen('ExtractOrcaMO.map', "w");
 if (($fin = fopen('php://stdin', "r")) !== FALSE) {
     while (!feof ($fin)) {
         $s = rtrim(ltrim(fgets($fin))); if(strlen($s)<1) continue; 
@@ -149,9 +153,10 @@ if (($fin = fopen('php://stdin', "r")) !== FALSE) {
 }
 
 //var_dump($MMO);
-$map = trace_MMO($MMO,$Prop,$flog,$fout);
+$map = trace_MMO($MMO,$Prop,$flog,$fout,$fmap);
 fclose($flog);
 fclose($fout);
+fclose($fmap);
 
 
 //         *               RELAXED SURFACE SCAN STEP   2               *
