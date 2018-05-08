@@ -1,5 +1,5 @@
 bg_color white
-set ray_opaque_background, off
+set ray_opaque_background, on
 load mo.cube
 isosurface pos, mo, 0.03
 isosurface neg, mo, -0.03
