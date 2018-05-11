@@ -1,0 +1,7 @@
+[user]
+	name = Alex Root
+	email = newrou@mail.ru
+[core]
+	editor = mcedit
+[merge]
+	tool = vimdiff
