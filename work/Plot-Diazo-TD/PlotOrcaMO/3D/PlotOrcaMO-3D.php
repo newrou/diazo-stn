@@ -15,6 +15,8 @@ function readCSV($csvFile){
 
 function Make_MO_images( $Map, $ME, $Name, $MO ) {
     $m = count($Map);
+    $f=fopen("$Name/MO$MO/MO$MO-stat.dat","w");
+    fclose($f);
     $f=fopen("$Name/MO$MO/scan.dat","w");
     for( $i=0; $i<$m; $i++ ) {
 	$N = 1 + $Map[$i][3+$MO];
@@ -23,7 +25,8 @@ function Make_MO_images( $Map, $ME, $Name, $MO ) {
 	$EMO = $ME[$i][3+$N];
 	fprintf($f, "%7.4f; %f; %f; %3ld;\n", $d, $E, $EMO, $N);
 	$S = sprintf("MO%ld  Step%ld  d=%.4f  E=%.6f  E(MO)=%.6f", $MO, $i+1, $d, $E, $EMO);
-	$com = sprintf("./Plot-MO.sh %s %d %d %03d \"%s\"", $Name, $MO, $N, $i+1, $S);
+	$STAT = sprintf("%ld;  %ld;  %.4f;  %.6f;  %.6f; ", $MO, $i+1, $d, $E, $EMO);
+	$com = sprintf("./Plot-MO.sh %s %d %d %03d \"%s\" \"%s\"", $Name, $MO, $N, $i+1, $S, $STAT);
 	echo "$com\n";
 	system($com);
     }
