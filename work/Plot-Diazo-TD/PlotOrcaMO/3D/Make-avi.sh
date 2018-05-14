@@ -9,7 +9,8 @@ do
 #    ffmpeg -y -an -r 10 -i "$MO-%03d.png" $MO.avi -qscale 0 -s 591×443 -vcodec ffv3 -level 3 -coder 1 -context 1 -g 1 -b:v 2M
 #    ffmpeg -y -an -r 24 -i "$MO-%03d.png" -vcodec rawvideo $MO.avi
 #    ffmpeg -y -an -r 12 -i "$MO-%03d.png" -q:v 1 -qscale 1 -b:v 8M $MO.avi
-    ffmpeg -y -an -r 12 -i "$MO-%03d.png" -q:v 1 -qscale 0 -b:v 8M $MO.avi
+#    ffmpeg -y -an -r 12 -i "$MO-%03d.png" -q:v 1 -qscale 0 -b:v 8M $MO.avi
+    ffmpeg -y -an -r 12 -i "$MO-%03d.png" -q:v 1 -b:v 100M -vcodec msmpeg4 -r 24 $MO.avi
     cd ../..
 done
 
