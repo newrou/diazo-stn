@@ -1,0 +1,912 @@
+<html>
+<head>
+ <title>Ph-N2+-scan-d090-169-n800</title>
+
+<style type="text/css">
+ table {background-color: #808080;}
+ tr {background-color: #FFFFFF;}
+ tr:hover {background-color: #FFFF99;}
+article {
+  display: block;
+  float: left;
+  background: #fff;
+}
+aside {
+  display: block;
+  margin-left: 400px;
+}
+#aside1 {
+  position: fixed;
+  z-index: 101;
+  height: 100%;
+  text-align: left;
+}
+td {
+  font-size: 9pt; 
+  text-align: center;
+  padding: 3px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+</style>
+
+
+<script type="text/javascript">
+<!--
+
+function FindPosition(oElement)
+{
+  if(typeof( oElement.offsetParent ) != "undefined")
+  {
+    for(var posX = 0, posY = 0; oElement; oElement = oElement.offsetParent)
+    {
+      posX += oElement.offsetLeft;
+      posY += oElement.offsetTop;
+    }
+      return [ posX, posY ];
+    }
+    else
+    {
+      return [ oElement.x, oElement.y ];
+    }
+}
+
+function GetCoordinates(e)
+{
+  var PosX = 0;
+  var PosY = 0;
+  var ImgPos;
+  ImgPos = FindPosition(myImg);
+  if (!e) var e = window.event;
+  if (e.pageX || e.pageY)
+  {
+    PosX = e.pageX;
+    PosY = e.pageY;
+  }
+  else if (e.clientX || e.clientY)
+    {
+      PosX = e.clientX + document.body.scrollLeft
+        + document.documentElement.scrollLeft;
+      PosY = e.clientY + document.body.scrollTop
+        + document.documentElement.scrollTop;
+    }
+  PosX = PosX - ImgPos[0];
+  PosY = PosY - ImgPos[1];
+  if(PosX>75 && PosX<576 )
+   {
+    Ni = Math.round((PosX-75)*800/500);
+    Ni=Ni+1;
+    if(Ni<1) Ni=1;
+    if(Ni>800) Ni=800;
+    sNi='00'+Ni;
+    if(Ni>9) sNi='0'+Ni;
+    if(Ni>99) sNi=''+Ni;
+//    E=document.getElementById("step"+sNi).innerHTML;
+    tr=document.getElementById("step"+sNi);
+    d = tr.getElementsByTagName("td")[1].innerHTML;
+    Eh = tr.getElementsByTagName("td")[2].innerHTML;
+    E = tr.getElementsByTagName("td")[3].innerHTML;
+    document.getElementById("x").innerHTML = ' Step: '+sNi+'  d='+d+'  Eh='+Eh+'  E='+E;
+//    document.getElementById("x").innerHTML = ' Step: '+Ni;
+//    document.getElementById("x").innerHTML = PosX+' n:'+Ni;
+//    document.getElementById("y").innerHTML = PosY;
+    document.getElementById("show1").src="img/Ph-N2+-scan-d090-169-n800."+sNi+".png";
+   }
+}
+
+//-->
+</script>
+
+</head>
+<body>
+<article>
+ <h4>Ph-N2+-scan-d090-169-n800</h4>
+  <table name=etab id=etab>
+   <tr> <td>n</td> <td>d, A</td> <td>Eh</td> <td>E, kJ/mol</td> </tr>
+   <tr id=step001 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.001.png';"> <td>1</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.001.mol">0.9000</a></td> <td>-340.1623</td> <td>1273.382</td> </tr>
+   <tr id=step002 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.002.png';"> <td>2</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.002.mol">0.9200</a></td> <td>-340.2278</td> <td>1101.532</td> </tr>
+   <tr id=step003 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.003.png';"> <td>3</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.003.mol">0.9401</a></td> <td>-340.2856</td> <td>949.656</td> </tr>
+   <tr id=step004 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.004.png';"> <td>4</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.004.mol">0.9601</a></td> <td>-340.3367</td> <td>815.640</td> </tr>
+   <tr id=step005 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.005.png';"> <td>5</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.005.mol">0.9801</a></td> <td>-340.3816</td> <td>697.583</td> </tr>
+   <tr id=step006 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.006.png';"> <td>6</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.006.mol">1.0001</a></td> <td>-340.4212</td> <td>593.786</td> </tr>
+   <tr id=step007 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.007.png';"> <td>7</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.007.mol">1.0202</a></td> <td>-340.4558</td> <td>502.733</td> </tr>
+   <tr id=step008 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.008.png';"> <td>8</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.008.mol">1.0402</a></td> <td>-340.4862</td> <td>423.073</td> </tr>
+   <tr id=step009 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.009.png';"> <td>9</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.009.mol">1.0602</a></td> <td>-340.5126</td> <td>353.601</td> </tr>
+   <tr id=step010 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.010.png';"> <td>10</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.010.mol">1.0802</a></td> <td>-340.5356</td> <td>293.238</td> </tr>
+   <tr id=step011 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.011.png';"> <td>11</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.011.mol">1.1003</a></td> <td>-340.5555</td> <td>241.011</td> </tr>
+   <tr id=step012 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.012.png';"> <td>12</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.012.mol">1.1203</a></td> <td>-340.5726</td> <td>196.043</td> </tr>
+   <tr id=step013 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.013.png';"> <td>13</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.013.mol">1.1403</a></td> <td>-340.5873</td> <td>157.540</td> </tr>
+   <tr id=step014 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.014.png';"> <td>14</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.014.mol">1.1603</a></td> <td>-340.5998</td> <td>124.790</td> </tr>
+   <tr id=step015 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.015.png';"> <td>15</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.015.mol">1.1804</a></td> <td>-340.6103</td> <td>97.153</td> </tr>
+   <tr id=step016 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.016.png';"> <td>16</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.016.mol">1.2004</a></td> <td>-340.6191</td> <td>74.057</td> </tr>
+   <tr id=step017 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.017.png';"> <td>17</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.017.mol">1.2204</a></td> <td>-340.6264</td> <td>54.988</td> </tr>
+   <tr id=step018 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.018.png';"> <td>18</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.018.mol">1.2404</a></td> <td>-340.6323</td> <td>39.481</td> </tr>
+   <tr id=step019 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.019.png';"> <td>19</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.019.mol">1.2605</a></td> <td>-340.6370</td> <td>27.120</td> </tr>
+   <tr id=step020 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.020.png';"> <td>20</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.020.mol">1.2805</a></td> <td>-340.6406</td> <td>17.521</td> </tr>
+   <tr id=step021 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.021.png';"> <td>21</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.021.mol">1.3005</a></td> <td>-340.6434</td> <td>10.341</td> </tr>
+   <tr id=step022 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.022.png';"> <td>22</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.022.mol">1.3205</a></td> <td>-340.6453</td> <td>5.266</td> </tr>
+   <tr id=step023 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.023.png';"> <td>23</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.023.mol">1.3406</a></td> <td>-340.6465</td> <td>2.015</td> </tr>
+   <tr id=step024 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.024.png';"> <td>24</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.024.mol">1.3606</a></td> <td>-340.6472</td> <td>0.335</td> </tr>
+   <tr id=step025 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.025.png';"> <td>25</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.025.mol">1.3806</a></td> <td>-340.6473</td> <td>0.000</td> </tr>
+   <tr id=step026 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.026.png';"> <td>26</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.026.mol">1.4006</a></td> <td>-340.6470</td> <td>0.807</td> </tr>
+   <tr id=step027 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.027.png';"> <td>27</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.027.mol">1.4207</a></td> <td>-340.6463</td> <td>2.572</td> </tr>
+   <tr id=step028 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.028.png';"> <td>28</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.028.mol">1.4407</a></td> <td>-340.6454</td> <td>5.134</td> </tr>
+   <tr id=step029 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.029.png';"> <td>29</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.029.mol">1.4607</a></td> <td>-340.6441</td> <td>8.345</td> </tr>
+   <tr id=step030 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.030.png';"> <td>30</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.030.mol">1.4807</a></td> <td>-340.6427</td> <td>12.072</td> </tr>
+   <tr id=step031 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.031.png';"> <td>31</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.031.mol">1.5008</a></td> <td>-340.6411</td> <td>16.199</td> </tr>
+   <tr id=step032 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.032.png';"> <td>32</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.032.mol">1.5208</a></td> <td>-340.6395</td> <td>20.621</td> </tr>
+   <tr id=step033 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.033.png';"> <td>33</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.033.mol">1.5408</a></td> <td>-340.6377</td> <td>25.248</td> </tr>
+   <tr id=step034 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.034.png';"> <td>34</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.034.mol">1.5608</a></td> <td>-340.6359</td> <td>30.000</td> </tr>
+   <tr id=step035 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.035.png';"> <td>35</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.035.mol">1.5809</a></td> <td>-340.6341</td> <td>34.812</td> </tr>
+   <tr id=step036 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.036.png';"> <td>36</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.036.mol">1.6009</a></td> <td>-340.6322</td> <td>39.625</td> </tr>
+   <tr id=step037 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.037.png';"> <td>37</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.037.mol">1.6209</a></td> <td>-340.6304</td> <td>44.392</td> </tr>
+   <tr id=step038 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.038.png';"> <td>38</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.038.mol">1.6409</a></td> <td>-340.6286</td> <td>49.075</td> </tr>
+   <tr id=step039 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.039.png';"> <td>39</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.039.mol">1.6610</a></td> <td>-340.6269</td> <td>53.640</td> </tr>
+   <tr id=step040 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.040.png';"> <td>40</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.040.mol">1.6810</a></td> <td>-340.6252</td> <td>58.063</td> </tr>
+   <tr id=step041 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.041.png';"> <td>41</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.041.mol">1.7010</a></td> <td>-340.6236</td> <td>62.324</td> </tr>
+   <tr id=step042 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.042.png';"> <td>42</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.042.mol">1.7210</a></td> <td>-340.6220</td> <td>66.408</td> </tr>
+   <tr id=step043 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.043.png';"> <td>43</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.043.mol">1.7411</a></td> <td>-340.6205</td> <td>70.306</td> </tr>
+   <tr id=step044 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.044.png';"> <td>44</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.044.mol">1.7611</a></td> <td>-340.6191</td> <td>74.011</td> </tr>
+   <tr id=step045 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.045.png';"> <td>45</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.045.mol">1.7811</a></td> <td>-340.6178</td> <td>77.521</td> </tr>
+   <tr id=step046 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.046.png';"> <td>46</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.046.mol">1.8011</a></td> <td>-340.6165</td> <td>80.837</td> </tr>
+   <tr id=step047 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.047.png';"> <td>47</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.047.mol">1.8212</a></td> <td>-340.6153</td> <td>83.963</td> </tr>
+   <tr id=step048 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.048.png';"> <td>48</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.048.mol">1.8412</a></td> <td>-340.6142</td> <td>86.902</td> </tr>
+   <tr id=step049 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.049.png';"> <td>49</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.049.mol">1.8612</a></td> <td>-340.6132</td> <td>89.662</td> </tr>
+   <tr id=step050 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.050.png';"> <td>50</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.050.mol">1.8812</a></td> <td>-340.6122</td> <td>92.251</td> </tr>
+   <tr id=step051 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.051.png';"> <td>51</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.051.mol">1.9013</a></td> <td>-340.6113</td> <td>94.677</td> </tr>
+   <tr id=step052 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.052.png';"> <td>52</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.052.mol">1.9213</a></td> <td>-340.6104</td> <td>96.948</td> </tr>
+   <tr id=step053 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.053.png';"> <td>53</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.053.mol">1.9413</a></td> <td>-340.6096</td> <td>99.073</td> </tr>
+   <tr id=step054 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.054.png';"> <td>54</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.054.mol">1.9613</a></td> <td>-340.6088</td> <td>101.062</td> </tr>
+   <tr id=step055 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.055.png';"> <td>55</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.055.mol">1.9814</a></td> <td>-340.6081</td> <td>102.921</td> </tr>
+   <tr id=step056 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.056.png';"> <td>56</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.056.mol">2.0014</a></td> <td>-340.6074</td> <td>104.661</td> </tr>
+   <tr id=step057 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.057.png';"> <td>57</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.057.mol">2.0214</a></td> <td>-340.6068</td> <td>106.290</td> </tr>
+   <tr id=step058 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.058.png';"> <td>58</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.058.mol">2.0414</a></td> <td>-340.6062</td> <td>107.815</td> </tr>
+   <tr id=step059 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.059.png';"> <td>59</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.059.mol">2.0615</a></td> <td>-340.6057</td> <td>109.245</td> </tr>
+   <tr id=step060 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.060.png';"> <td>60</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.060.mol">2.0815</a></td> <td>-340.6052</td> <td>110.588</td> </tr>
+   <tr id=step061 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.061.png';"> <td>61</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.061.mol">2.1015</a></td> <td>-340.6047</td> <td>111.852</td> </tr>
+   <tr id=step062 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.062.png';"> <td>62</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.062.mol">2.1215</a></td> <td>-340.6043</td> <td>113.045</td> </tr>
+   <tr id=step063 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.063.png';"> <td>63</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.063.mol">2.1416</a></td> <td>-340.6038</td> <td>114.171</td> </tr>
+   <tr id=step064 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.064.png';"> <td>64</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.064.mol">2.1616</a></td> <td>-340.6034</td> <td>115.239</td> </tr>
+   <tr id=step065 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.065.png';"> <td>65</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.065.mol">2.1816</a></td> <td>-340.6030</td> <td>116.254</td> </tr>
+   <tr id=step066 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.066.png';"> <td>66</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.066.mol">2.2016</a></td> <td>-340.6027</td> <td>117.219</td> </tr>
+   <tr id=step067 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.067.png';"> <td>67</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.067.mol">2.2217</a></td> <td>-340.6023</td> <td>118.141</td> </tr>
+   <tr id=step068 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.068.png';"> <td>68</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.068.mol">2.2417</a></td> <td>-340.6020</td> <td>119.023</td> </tr>
+   <tr id=step069 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.069.png';"> <td>69</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.069.mol">2.2617</a></td> <td>-340.6017</td> <td>119.868</td> </tr>
+   <tr id=step070 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.070.png';"> <td>70</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.070.mol">2.2817</a></td> <td>-340.6013</td> <td>120.680</td> </tr>
+   <tr id=step071 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.071.png';"> <td>71</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.071.mol">2.3018</a></td> <td>-340.6011</td> <td>121.463</td> </tr>
+   <tr id=step072 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.072.png';"> <td>72</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.072.mol">2.3218</a></td> <td>-340.6008</td> <td>122.219</td> </tr>
+   <tr id=step073 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.073.png';"> <td>73</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.073.mol">2.3418</a></td> <td>-340.6005</td> <td>122.951</td> </tr>
+   <tr id=step074 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.074.png';"> <td>74</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.074.mol">2.3618</a></td> <td>-340.6002</td> <td>123.664</td> </tr>
+   <tr id=step075 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.075.png';"> <td>75</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.075.mol">2.3819</a></td> <td>-340.5999</td> <td>124.352</td> </tr>
+   <tr id=step076 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.076.png';"> <td>76</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.076.mol">2.4019</a></td> <td>-340.5997</td> <td>125.027</td> </tr>
+   <tr id=step077 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.077.png';"> <td>77</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.077.mol">2.4219</a></td> <td>-340.5994</td> <td>125.685</td> </tr>
+   <tr id=step078 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.078.png';"> <td>78</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.078.mol">2.4419</a></td> <td>-340.5992</td> <td>126.328</td> </tr>
+   <tr id=step079 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.079.png';"> <td>79</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.079.mol">2.4620</a></td> <td>-340.5990</td> <td>126.958</td> </tr>
+   <tr id=step080 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.080.png';"> <td>80</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.080.mol">2.4820</a></td> <td>-340.5987</td> <td>127.574</td> </tr>
+   <tr id=step081 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.081.png';"> <td>81</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.081.mol">2.5020</a></td> <td>-340.5985</td> <td>128.180</td> </tr>
+   <tr id=step082 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.082.png';"> <td>82</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.082.mol">2.5220</a></td> <td>-340.5983</td> <td>128.772</td> </tr>
+   <tr id=step083 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.083.png';"> <td>83</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.083.mol">2.5421</a></td> <td>-340.5980</td> <td>129.356</td> </tr>
+   <tr id=step084 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.084.png';"> <td>84</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.084.mol">2.5621</a></td> <td>-340.5978</td> <td>129.926</td> </tr>
+   <tr id=step085 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.085.png';"> <td>85</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.085.mol">2.5821</a></td> <td>-340.5976</td> <td>130.489</td> </tr>
+   <tr id=step086 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.086.png';"> <td>86</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.086.mol">2.6021</a></td> <td>-340.5974</td> <td>131.039</td> </tr>
+   <tr id=step087 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.087.png';"> <td>87</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.087.mol">2.6222</a></td> <td>-340.5972</td> <td>131.583</td> </tr>
+   <tr id=step088 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.088.png';"> <td>88</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.088.mol">2.6422</a></td> <td>-340.5970</td> <td>132.114</td> </tr>
+   <tr id=step089 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.089.png';"> <td>89</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.089.mol">2.6622</a></td> <td>-340.5968</td> <td>132.638</td> </tr>
+   <tr id=step090 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.090.png';"> <td>90</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.090.mol">2.6822</a></td> <td>-340.5966</td> <td>133.154</td> </tr>
+   <tr id=step091 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.091.png';"> <td>91</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.091.mol">2.7023</a></td> <td>-340.5964</td> <td>133.662</td> </tr>
+   <tr id=step092 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.092.png';"> <td>92</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.092.mol">2.7223</a></td> <td>-340.5962</td> <td>134.163</td> </tr>
+   <tr id=step093 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.093.png';"> <td>93</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.093.mol">2.7423</a></td> <td>-340.5960</td> <td>134.656</td> </tr>
+   <tr id=step094 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.094.png';"> <td>94</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.094.mol">2.7623</a></td> <td>-340.5958</td> <td>135.141</td> </tr>
+   <tr id=step095 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.095.png';"> <td>95</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.095.mol">2.7824</a></td> <td>-340.5957</td> <td>135.619</td> </tr>
+   <tr id=step096 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.096.png';"> <td>96</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.096.mol">2.8024</a></td> <td>-340.5955</td> <td>136.090</td> </tr>
+   <tr id=step097 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.097.png';"> <td>97</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.097.mol">2.8224</a></td> <td>-340.5953</td> <td>136.553</td> </tr>
+   <tr id=step098 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.098.png';"> <td>98</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.098.mol">2.8424</a></td> <td>-340.5951</td> <td>137.008</td> </tr>
+   <tr id=step099 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.099.png';"> <td>99</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.099.mol">2.8625</a></td> <td>-340.5950</td> <td>137.455</td> </tr>
+   <tr id=step100 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.100.png';"> <td>100</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.100.mol">2.8825</a></td> <td>-340.5948</td> <td>137.894</td> </tr>
+   <tr id=step101 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.101.png';"> <td>101</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.101.mol">2.9025</a></td> <td>-340.5946</td> <td>138.324</td> </tr>
+   <tr id=step102 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.102.png';"> <td>102</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.102.mol">2.9225</a></td> <td>-340.5945</td> <td>138.746</td> </tr>
+   <tr id=step103 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.103.png';"> <td>103</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.103.mol">2.9426</a></td> <td>-340.5943</td> <td>139.160</td> </tr>
+   <tr id=step104 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.104.png';"> <td>104</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.104.mol">2.9626</a></td> <td>-340.5942</td> <td>139.566</td> </tr>
+   <tr id=step105 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.105.png';"> <td>105</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.105.mol">2.9826</a></td> <td>-340.5940</td> <td>139.963</td> </tr>
+   <tr id=step106 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.106.png';"> <td>106</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.106.mol">3.0026</a></td> <td>-340.5939</td> <td>140.351</td> </tr>
+   <tr id=step107 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.107.png';"> <td>107</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.107.mol">3.0227</a></td> <td>-340.5937</td> <td>140.732</td> </tr>
+   <tr id=step108 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.108.png';"> <td>108</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.108.mol">3.0427</a></td> <td>-340.5936</td> <td>141.104</td> </tr>
+   <tr id=step109 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.109.png';"> <td>109</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.109.mol">3.0627</a></td> <td>-340.5934</td> <td>141.468</td> </tr>
+   <tr id=step110 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.110.png';"> <td>110</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.110.mol">3.0827</a></td> <td>-340.5933</td> <td>141.824</td> </tr>
+   <tr id=step111 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.111.png';"> <td>111</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.111.mol">3.1028</a></td> <td>-340.5932</td> <td>142.173</td> </tr>
+   <tr id=step112 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.112.png';"> <td>112</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.112.mol">3.1228</a></td> <td>-340.5930</td> <td>142.513</td> </tr>
+   <tr id=step113 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.113.png';"> <td>113</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.113.mol">3.1428</a></td> <td>-340.5929</td> <td>142.847</td> </tr>
+   <tr id=step114 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.114.png';"> <td>114</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.114.mol">3.1628</a></td> <td>-340.5928</td> <td>143.174</td> </tr>
+   <tr id=step115 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.115.png';"> <td>115</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.115.mol">3.1829</a></td> <td>-340.5927</td> <td>143.493</td> </tr>
+   <tr id=step116 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.116.png';"> <td>116</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.116.mol">3.2029</a></td> <td>-340.5925</td> <td>143.806</td> </tr>
+   <tr id=step117 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.117.png';"> <td>117</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.117.mol">3.2229</a></td> <td>-340.5924</td> <td>144.111</td> </tr>
+   <tr id=step118 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.118.png';"> <td>118</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.118.mol">3.2429</a></td> <td>-340.5923</td> <td>144.410</td> </tr>
+   <tr id=step119 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.119.png';"> <td>119</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.119.mol">3.2630</a></td> <td>-340.5922</td> <td>144.703</td> </tr>
+   <tr id=step120 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.120.png';"> <td>120</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.120.mol">3.2830</a></td> <td>-340.5921</td> <td>144.988</td> </tr>
+   <tr id=step121 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.121.png';"> <td>121</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.121.mol">3.3030</a></td> <td>-340.5920</td> <td>145.267</td> </tr>
+   <tr id=step122 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.122.png';"> <td>122</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.122.mol">3.3230</a></td> <td>-340.5919</td> <td>145.538</td> </tr>
+   <tr id=step123 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.123.png';"> <td>123</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.123.mol">3.3431</a></td> <td>-340.5918</td> <td>145.804</td> </tr>
+   <tr id=step124 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.124.png';"> <td>124</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.124.mol">3.3631</a></td> <td>-340.5917</td> <td>146.062</td> </tr>
+   <tr id=step125 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.125.png';"> <td>125</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.125.mol">3.3831</a></td> <td>-340.5916</td> <td>146.314</td> </tr>
+   <tr id=step126 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.126.png';"> <td>126</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.126.mol">3.4031</a></td> <td>-340.5915</td> <td>146.559</td> </tr>
+   <tr id=step127 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.127.png';"> <td>127</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.127.mol">3.4232</a></td> <td>-340.5914</td> <td>146.798</td> </tr>
+   <tr id=step128 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.128.png';"> <td>128</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.128.mol">3.4432</a></td> <td>-340.5913</td> <td>147.031</td> </tr>
+   <tr id=step129 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.129.png';"> <td>129</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.129.mol">3.4632</a></td> <td>-340.5912</td> <td>147.257</td> </tr>
+   <tr id=step130 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.130.png';"> <td>130</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.130.mol">3.4832</a></td> <td>-340.5911</td> <td>147.478</td> </tr>
+   <tr id=step131 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.131.png';"> <td>131</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.131.mol">3.5033</a></td> <td>-340.5911</td> <td>147.692</td> </tr>
+   <tr id=step132 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.132.png';"> <td>132</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.132.mol">3.5233</a></td> <td>-340.5910</td> <td>147.901</td> </tr>
+   <tr id=step133 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.133.png';"> <td>133</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.133.mol">3.5433</a></td> <td>-340.5909</td> <td>148.104</td> </tr>
+   <tr id=step134 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.134.png';"> <td>134</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.134.mol">3.5633</a></td> <td>-340.5908</td> <td>148.303</td> </tr>
+   <tr id=step135 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.135.png';"> <td>135</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.135.mol">3.5834</a></td> <td>-340.5908</td> <td>148.496</td> </tr>
+   <tr id=step136 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.136.png';"> <td>136</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.136.mol">3.6034</a></td> <td>-340.5907</td> <td>148.685</td> </tr>
+   <tr id=step137 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.137.png';"> <td>137</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.137.mol">3.6234</a></td> <td>-340.5906</td> <td>148.870</td> </tr>
+   <tr id=step138 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.138.png';"> <td>138</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.138.mol">3.6434</a></td> <td>-340.5905</td> <td>149.050</td> </tr>
+   <tr id=step139 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.139.png';"> <td>139</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.139.mol">3.6635</a></td> <td>-340.5905</td> <td>149.227</td> </tr>
+   <tr id=step140 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.140.png';"> <td>140</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.140.mol">3.6835</a></td> <td>-340.5904</td> <td>149.399</td> </tr>
+   <tr id=step141 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.141.png';"> <td>141</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.141.mol">3.7035</a></td> <td>-340.5903</td> <td>149.567</td> </tr>
+   <tr id=step142 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.142.png';"> <td>142</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.142.mol">3.7235</a></td> <td>-340.5903</td> <td>149.731</td> </tr>
+   <tr id=step143 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.143.png';"> <td>143</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.143.mol">3.7436</a></td> <td>-340.5902</td> <td>149.891</td> </tr>
+   <tr id=step144 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.144.png';"> <td>144</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.144.mol">3.7636</a></td> <td>-340.5902</td> <td>150.048</td> </tr>
+   <tr id=step145 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.145.png';"> <td>145</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.145.mol">3.7836</a></td> <td>-340.5901</td> <td>150.200</td> </tr>
+   <tr id=step146 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.146.png';"> <td>146</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.146.mol">3.8036</a></td> <td>-340.5900</td> <td>150.348</td> </tr>
+   <tr id=step147 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.147.png';"> <td>147</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.147.mol">3.8237</a></td> <td>-340.5900</td> <td>150.491</td> </tr>
+   <tr id=step148 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.148.png';"> <td>148</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.148.mol">3.8437</a></td> <td>-340.5899</td> <td>150.631</td> </tr>
+   <tr id=step149 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.149.png';"> <td>149</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.149.mol">3.8637</a></td> <td>-340.5899</td> <td>150.767</td> </tr>
+   <tr id=step150 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.150.png';"> <td>150</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.150.mol">3.8837</a></td> <td>-340.5898</td> <td>150.899</td> </tr>
+   <tr id=step151 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.151.png';"> <td>151</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.151.mol">3.9038</a></td> <td>-340.5898</td> <td>151.027</td> </tr>
+   <tr id=step152 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.152.png';"> <td>152</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.152.mol">3.9238</a></td> <td>-340.5897</td> <td>151.150</td> </tr>
+   <tr id=step153 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.153.png';"> <td>153</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.153.mol">3.9438</a></td> <td>-340.5897</td> <td>151.270</td> </tr>
+   <tr id=step154 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.154.png';"> <td>154</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.154.mol">3.9638</a></td> <td>-340.5897</td> <td>151.387</td> </tr>
+   <tr id=step155 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.155.png';"> <td>155</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.155.mol">3.9839</a></td> <td>-340.5896</td> <td>151.500</td> </tr>
+   <tr id=step156 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.156.png';"> <td>156</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.156.mol">4.0039</a></td> <td>-340.5896</td> <td>151.609</td> </tr>
+   <tr id=step157 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.157.png';"> <td>157</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.157.mol">4.0239</a></td> <td>-340.5895</td> <td>151.717</td> </tr>
+   <tr id=step158 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.158.png';"> <td>158</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.158.mol">4.0439</a></td> <td>-340.5895</td> <td>151.821</td> </tr>
+   <tr id=step159 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.159.png';"> <td>159</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.159.mol">4.0640</a></td> <td>-340.5894</td> <td>151.923</td> </tr>
+   <tr id=step160 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.160.png';"> <td>160</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.160.mol">4.0840</a></td> <td>-340.5894</td> <td>152.023</td> </tr>
+   <tr id=step161 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.161.png';"> <td>161</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.161.mol">4.1040</a></td> <td>-340.5894</td> <td>152.121</td> </tr>
+   <tr id=step162 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.162.png';"> <td>162</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.162.mol">4.1240</a></td> <td>-340.5893</td> <td>152.216</td> </tr>
+   <tr id=step163 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.163.png';"> <td>163</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.163.mol">4.1441</a></td> <td>-340.5893</td> <td>152.310</td> </tr>
+   <tr id=step164 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.164.png';"> <td>164</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.164.mol">4.1641</a></td> <td>-340.5893</td> <td>152.401</td> </tr>
+   <tr id=step165 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.165.png';"> <td>165</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.165.mol">4.1841</a></td> <td>-340.5892</td> <td>152.490</td> </tr>
+   <tr id=step166 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.166.png';"> <td>166</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.166.mol">4.2041</a></td> <td>-340.5892</td> <td>152.576</td> </tr>
+   <tr id=step167 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.167.png';"> <td>167</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.167.mol">4.2242</a></td> <td>-340.5892</td> <td>152.661</td> </tr>
+   <tr id=step168 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.168.png';"> <td>168</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.168.mol">4.2442</a></td> <td>-340.5891</td> <td>152.743</td> </tr>
+   <tr id=step169 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.169.png';"> <td>169</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.169.mol">4.2642</a></td> <td>-340.5891</td> <td>152.823</td> </tr>
+   <tr id=step170 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.170.png';"> <td>170</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.170.mol">4.2842</a></td> <td>-340.5891</td> <td>152.901</td> </tr>
+   <tr id=step171 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.171.png';"> <td>171</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.171.mol">4.3043</a></td> <td>-340.5890</td> <td>152.977</td> </tr>
+   <tr id=step172 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.172.png';"> <td>172</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.172.mol">4.3243</a></td> <td>-340.5890</td> <td>153.051</td> </tr>
+   <tr id=step173 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.173.png';"> <td>173</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.173.mol">4.3443</a></td> <td>-340.5890</td> <td>153.123</td> </tr>
+   <tr id=step174 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.174.png';"> <td>174</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.174.mol">4.3643</a></td> <td>-340.5890</td> <td>153.192</td> </tr>
+   <tr id=step175 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.175.png';"> <td>175</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.175.mol">4.3844</a></td> <td>-340.5889</td> <td>153.259</td> </tr>
+   <tr id=step176 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.176.png';"> <td>176</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.176.mol">4.4044</a></td> <td>-340.5889</td> <td>153.324</td> </tr>
+   <tr id=step177 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.177.png';"> <td>177</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.177.mol">4.4244</a></td> <td>-340.5889</td> <td>153.387</td> </tr>
+   <tr id=step178 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.178.png';"> <td>178</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.178.mol">4.4444</a></td> <td>-340.5889</td> <td>153.448</td> </tr>
+   <tr id=step179 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.179.png';"> <td>179</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.179.mol">4.4645</a></td> <td>-340.5888</td> <td>153.507</td> </tr>
+   <tr id=step180 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.180.png';"> <td>180</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.180.mol">4.4845</a></td> <td>-340.5888</td> <td>153.564</td> </tr>
+   <tr id=step181 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.181.png';"> <td>181</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.181.mol">4.5045</a></td> <td>-340.5888</td> <td>153.620</td> </tr>
+   <tr id=step182 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.182.png';"> <td>182</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.182.mol">4.5245</a></td> <td>-340.5888</td> <td>153.674</td> </tr>
+   <tr id=step183 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.183.png';"> <td>183</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.183.mol">4.5446</a></td> <td>-340.5888</td> <td>153.728</td> </tr>
+   <tr id=step184 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.184.png';"> <td>184</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.184.mol">4.5646</a></td> <td>-340.5887</td> <td>153.780</td> </tr>
+   <tr id=step185 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.185.png';"> <td>185</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.185.mol">4.5846</a></td> <td>-340.5887</td> <td>153.831</td> </tr>
+   <tr id=step186 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.186.png';"> <td>186</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.186.mol">4.6046</a></td> <td>-340.5887</td> <td>153.881</td> </tr>
+   <tr id=step187 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.187.png';"> <td>187</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.187.mol">4.6247</a></td> <td>-340.5887</td> <td>153.930</td> </tr>
+   <tr id=step188 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.188.png';"> <td>188</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.188.mol">4.6447</a></td> <td>-340.5887</td> <td>153.978</td> </tr>
+   <tr id=step189 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.189.png';"> <td>189</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.189.mol">4.6647</a></td> <td>-340.5886</td> <td>154.024</td> </tr>
+   <tr id=step190 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.190.png';"> <td>190</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.190.mol">4.6847</a></td> <td>-340.5886</td> <td>154.070</td> </tr>
+   <tr id=step191 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.191.png';"> <td>191</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.191.mol">4.7048</a></td> <td>-340.5886</td> <td>154.115</td> </tr>
+   <tr id=step192 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.192.png';"> <td>192</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.192.mol">4.7248</a></td> <td>-340.5886</td> <td>154.159</td> </tr>
+   <tr id=step193 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.193.png';"> <td>193</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.193.mol">4.7448</a></td> <td>-340.5886</td> <td>154.202</td> </tr>
+   <tr id=step194 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.194.png';"> <td>194</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.194.mol">4.7648</a></td> <td>-340.5886</td> <td>154.245</td> </tr>
+   <tr id=step195 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.195.png';"> <td>195</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.195.mol">4.7849</a></td> <td>-340.5885</td> <td>154.286</td> </tr>
+   <tr id=step196 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.196.png';"> <td>196</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.196.mol">4.8049</a></td> <td>-340.5885</td> <td>154.326</td> </tr>
+   <tr id=step197 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.197.png';"> <td>197</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.197.mol">4.8249</a></td> <td>-340.5885</td> <td>154.365</td> </tr>
+   <tr id=step198 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.198.png';"> <td>198</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.198.mol">4.8449</a></td> <td>-340.5885</td> <td>154.404</td> </tr>
+   <tr id=step199 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.199.png';"> <td>199</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.199.mol">4.8650</a></td> <td>-340.5885</td> <td>154.442</td> </tr>
+   <tr id=step200 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.200.png';"> <td>200</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.200.mol">4.8850</a></td> <td>-340.5885</td> <td>154.478</td> </tr>
+   <tr id=step201 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.201.png';"> <td>201</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.201.mol">4.9050</a></td> <td>-340.5885</td> <td>154.514</td> </tr>
+   <tr id=step202 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.202.png';"> <td>202</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.202.mol">4.9250</a></td> <td>-340.5884</td> <td>154.549</td> </tr>
+   <tr id=step203 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.203.png';"> <td>203</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.203.mol">4.9451</a></td> <td>-340.5884</td> <td>154.584</td> </tr>
+   <tr id=step204 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.204.png';"> <td>204</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.204.mol">4.9651</a></td> <td>-340.5884</td> <td>154.617</td> </tr>
+   <tr id=step205 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.205.png';"> <td>205</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.205.mol">4.9851</a></td> <td>-340.5884</td> <td>154.650</td> </tr>
+   <tr id=step206 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.206.png';"> <td>206</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.206.mol">5.0051</a></td> <td>-340.5884</td> <td>154.682</td> </tr>
+   <tr id=step207 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.207.png';"> <td>207</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.207.mol">5.0252</a></td> <td>-340.5884</td> <td>154.714</td> </tr>
+   <tr id=step208 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.208.png';"> <td>208</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.208.mol">5.0452</a></td> <td>-340.5884</td> <td>154.745</td> </tr>
+   <tr id=step209 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.209.png';"> <td>209</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.209.mol">5.0652</a></td> <td>-340.5884</td> <td>154.775</td> </tr>
+   <tr id=step210 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.210.png';"> <td>210</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.210.mol">5.0852</a></td> <td>-340.5884</td> <td>154.805</td> </tr>
+   <tr id=step211 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.211.png';"> <td>211</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.211.mol">5.1053</a></td> <td>-340.5883</td> <td>154.835</td> </tr>
+   <tr id=step212 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.212.png';"> <td>212</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.212.mol">5.1253</a></td> <td>-340.5883</td> <td>154.864</td> </tr>
+   <tr id=step213 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.213.png';"> <td>213</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.213.mol">5.1453</a></td> <td>-340.5883</td> <td>154.893</td> </tr>
+   <tr id=step214 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.214.png';"> <td>214</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.214.mol">5.1653</a></td> <td>-340.5883</td> <td>154.921</td> </tr>
+   <tr id=step215 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.215.png';"> <td>215</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.215.mol">5.1854</a></td> <td>-340.5883</td> <td>154.949</td> </tr>
+   <tr id=step216 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.216.png';"> <td>216</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.216.mol">5.2054</a></td> <td>-340.5883</td> <td>154.976</td> </tr>
+   <tr id=step217 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.217.png';"> <td>217</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.217.mol">5.2254</a></td> <td>-340.5883</td> <td>155.003</td> </tr>
+   <tr id=step218 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.218.png';"> <td>218</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.218.mol">5.2454</a></td> <td>-340.5883</td> <td>155.030</td> </tr>
+   <tr id=step219 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.219.png';"> <td>219</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.219.mol">5.2655</a></td> <td>-340.5883</td> <td>155.056</td> </tr>
+   <tr id=step220 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.220.png';"> <td>220</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.220.mol">5.2855</a></td> <td>-340.5882</td> <td>155.082</td> </tr>
+   <tr id=step221 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.221.png';"> <td>221</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.221.mol">5.3055</a></td> <td>-340.5882</td> <td>155.107</td> </tr>
+   <tr id=step222 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.222.png';"> <td>222</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.222.mol">5.3255</a></td> <td>-340.5882</td> <td>155.132</td> </tr>
+   <tr id=step223 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.223.png';"> <td>223</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.223.mol">5.3456</a></td> <td>-340.5882</td> <td>155.157</td> </tr>
+   <tr id=step224 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.224.png';"> <td>224</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.224.mol">5.3656</a></td> <td>-340.5882</td> <td>155.181</td> </tr>
+   <tr id=step225 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.225.png';"> <td>225</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.225.mol">5.3856</a></td> <td>-340.5882</td> <td>155.205</td> </tr>
+   <tr id=step226 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.226.png';"> <td>226</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.226.mol">5.4056</a></td> <td>-340.5882</td> <td>155.228</td> </tr>
+   <tr id=step227 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.227.png';"> <td>227</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.227.mol">5.4257</a></td> <td>-340.5882</td> <td>155.252</td> </tr>
+   <tr id=step228 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.228.png';"> <td>228</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.228.mol">5.4457</a></td> <td>-340.5882</td> <td>155.274</td> </tr>
+   <tr id=step229 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.229.png';"> <td>229</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.229.mol">5.4657</a></td> <td>-340.5882</td> <td>155.297</td> </tr>
+   <tr id=step230 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.230.png';"> <td>230</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.230.mol">5.4857</a></td> <td>-340.5882</td> <td>155.319</td> </tr>
+   <tr id=step231 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.231.png';"> <td>231</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.231.mol">5.5058</a></td> <td>-340.5881</td> <td>155.341</td> </tr>
+   <tr id=step232 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.232.png';"> <td>232</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.232.mol">5.5258</a></td> <td>-340.5881</td> <td>155.362</td> </tr>
+   <tr id=step233 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.233.png';"> <td>233</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.233.mol">5.5458</a></td> <td>-340.5881</td> <td>155.383</td> </tr>
+   <tr id=step234 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.234.png';"> <td>234</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.234.mol">5.5658</a></td> <td>-340.5881</td> <td>155.404</td> </tr>
+   <tr id=step235 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.235.png';"> <td>235</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.235.mol">5.5859</a></td> <td>-340.5881</td> <td>155.425</td> </tr>
+   <tr id=step236 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.236.png';"> <td>236</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.236.mol">5.6059</a></td> <td>-340.5881</td> <td>155.445</td> </tr>
+   <tr id=step237 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.237.png';"> <td>237</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.237.mol">5.6259</a></td> <td>-340.5881</td> <td>155.465</td> </tr>
+   <tr id=step238 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.238.png';"> <td>238</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.238.mol">5.6459</a></td> <td>-340.5881</td> <td>155.485</td> </tr>
+   <tr id=step239 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.239.png';"> <td>239</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.239.mol">5.6660</a></td> <td>-340.5881</td> <td>155.504</td> </tr>
+   <tr id=step240 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.240.png';"> <td>240</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.240.mol">5.6860</a></td> <td>-340.5881</td> <td>155.523</td> </tr>
+   <tr id=step241 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.241.png';"> <td>241</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.241.mol">5.7060</a></td> <td>-340.5881</td> <td>155.542</td> </tr>
+   <tr id=step242 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.242.png';"> <td>242</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.242.mol">5.7260</a></td> <td>-340.5881</td> <td>155.561</td> </tr>
+   <tr id=step243 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.243.png';"> <td>243</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.243.mol">5.7461</a></td> <td>-340.5881</td> <td>155.580</td> </tr>
+   <tr id=step244 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.244.png';"> <td>244</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.244.mol">5.7661</a></td> <td>-340.5880</td> <td>155.598</td> </tr>
+   <tr id=step245 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.245.png';"> <td>245</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.245.mol">5.7861</a></td> <td>-340.5880</td> <td>155.616</td> </tr>
+   <tr id=step246 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.246.png';"> <td>246</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.246.mol">5.8061</a></td> <td>-340.5880</td> <td>155.634</td> </tr>
+   <tr id=step247 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.247.png';"> <td>247</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.247.mol">5.8262</a></td> <td>-340.5880</td> <td>155.652</td> </tr>
+   <tr id=step248 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.248.png';"> <td>248</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.248.mol">5.8462</a></td> <td>-340.5880</td> <td>155.669</td> </tr>
+   <tr id=step249 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.249.png';"> <td>249</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.249.mol">5.8662</a></td> <td>-340.5880</td> <td>155.686</td> </tr>
+   <tr id=step250 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.250.png';"> <td>250</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.250.mol">5.8862</a></td> <td>-340.5880</td> <td>155.703</td> </tr>
+   <tr id=step251 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.251.png';"> <td>251</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.251.mol">5.9063</a></td> <td>-340.5880</td> <td>155.720</td> </tr>
+   <tr id=step252 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.252.png';"> <td>252</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.252.mol">5.9263</a></td> <td>-340.5880</td> <td>155.737</td> </tr>
+   <tr id=step253 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.253.png';"> <td>253</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.253.mol">5.9463</a></td> <td>-340.5880</td> <td>155.753</td> </tr>
+   <tr id=step254 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.254.png';"> <td>254</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.254.mol">5.9663</a></td> <td>-340.5880</td> <td>155.770</td> </tr>
+   <tr id=step255 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.255.png';"> <td>255</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.255.mol">5.9864</a></td> <td>-340.5880</td> <td>155.786</td> </tr>
+   <tr id=step256 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.256.png';"> <td>256</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.256.mol">6.0064</a></td> <td>-340.5880</td> <td>155.801</td> </tr>
+   <tr id=step257 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.257.png';"> <td>257</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.257.mol">6.0264</a></td> <td>-340.5880</td> <td>155.817</td> </tr>
+   <tr id=step258 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.258.png';"> <td>258</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.258.mol">6.0464</a></td> <td>-340.5880</td> <td>155.832</td> </tr>
+   <tr id=step259 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.259.png';"> <td>259</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.259.mol">6.0665</a></td> <td>-340.5880</td> <td>155.848</td> </tr>
+   <tr id=step260 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.260.png';"> <td>260</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.260.mol">6.0865</a></td> <td>-340.5879</td> <td>155.863</td> </tr>
+   <tr id=step261 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.261.png';"> <td>261</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.261.mol">6.1065</a></td> <td>-340.5879</td> <td>155.877</td> </tr>
+   <tr id=step262 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.262.png';"> <td>262</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.262.mol">6.1265</a></td> <td>-340.5879</td> <td>155.892</td> </tr>
+   <tr id=step263 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.263.png';"> <td>263</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.263.mol">6.1466</a></td> <td>-340.5879</td> <td>155.907</td> </tr>
+   <tr id=step264 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.264.png';"> <td>264</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.264.mol">6.1666</a></td> <td>-340.5879</td> <td>155.921</td> </tr>
+   <tr id=step265 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.265.png';"> <td>265</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.265.mol">6.1866</a></td> <td>-340.5879</td> <td>155.935</td> </tr>
+   <tr id=step266 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.266.png';"> <td>266</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.266.mol">6.2066</a></td> <td>-340.5879</td> <td>155.949</td> </tr>
+   <tr id=step267 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.267.png';"> <td>267</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.267.mol">6.2267</a></td> <td>-340.5879</td> <td>155.963</td> </tr>
+   <tr id=step268 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.268.png';"> <td>268</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.268.mol">6.2467</a></td> <td>-340.5879</td> <td>155.977</td> </tr>
+   <tr id=step269 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.269.png';"> <td>269</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.269.mol">6.2667</a></td> <td>-340.5879</td> <td>155.990</td> </tr>
+   <tr id=step270 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.270.png';"> <td>270</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.270.mol">6.2867</a></td> <td>-340.5879</td> <td>156.003</td> </tr>
+   <tr id=step271 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.271.png';"> <td>271</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.271.mol">6.3068</a></td> <td>-340.5879</td> <td>156.017</td> </tr>
+   <tr id=step272 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.272.png';"> <td>272</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.272.mol">6.3268</a></td> <td>-340.5879</td> <td>156.030</td> </tr>
+   <tr id=step273 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.273.png';"> <td>273</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.273.mol">6.3468</a></td> <td>-340.5879</td> <td>156.042</td> </tr>
+   <tr id=step274 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.274.png';"> <td>274</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.274.mol">6.3668</a></td> <td>-340.5879</td> <td>156.055</td> </tr>
+   <tr id=step275 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.275.png';"> <td>275</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.275.mol">6.3869</a></td> <td>-340.5879</td> <td>156.068</td> </tr>
+   <tr id=step276 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.276.png';"> <td>276</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.276.mol">6.4069</a></td> <td>-340.5879</td> <td>156.080</td> </tr>
+   <tr id=step277 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.277.png';"> <td>277</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.277.mol">6.4269</a></td> <td>-340.5879</td> <td>156.093</td> </tr>
+   <tr id=step278 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.278.png';"> <td>278</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.278.mol">6.4469</a></td> <td>-340.5879</td> <td>156.105</td> </tr>
+   <tr id=step279 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.279.png';"> <td>279</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.279.mol">6.4670</a></td> <td>-340.5879</td> <td>156.117</td> </tr>
+   <tr id=step280 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.280.png';"> <td>280</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.280.mol">6.4870</a></td> <td>-340.5878</td> <td>156.129</td> </tr>
+   <tr id=step281 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.281.png';"> <td>281</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.281.mol">6.5070</a></td> <td>-340.5878</td> <td>156.140</td> </tr>
+   <tr id=step282 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.282.png';"> <td>282</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.282.mol">6.5270</a></td> <td>-340.5878</td> <td>156.152</td> </tr>
+   <tr id=step283 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.283.png';"> <td>283</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.283.mol">6.5471</a></td> <td>-340.5878</td> <td>156.164</td> </tr>
+   <tr id=step284 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.284.png';"> <td>284</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.284.mol">6.5671</a></td> <td>-340.5878</td> <td>156.175</td> </tr>
+   <tr id=step285 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.285.png';"> <td>285</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.285.mol">6.5871</a></td> <td>-340.5878</td> <td>156.186</td> </tr>
+   <tr id=step286 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.286.png';"> <td>286</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.286.mol">6.6071</a></td> <td>-340.5878</td> <td>156.197</td> </tr>
+   <tr id=step287 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.287.png';"> <td>287</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.287.mol">6.6272</a></td> <td>-340.5878</td> <td>156.208</td> </tr>
+   <tr id=step288 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.288.png';"> <td>288</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.288.mol">6.6472</a></td> <td>-340.5878</td> <td>156.219</td> </tr>
+   <tr id=step289 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.289.png';"> <td>289</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.289.mol">6.6672</a></td> <td>-340.5878</td> <td>156.230</td> </tr>
+   <tr id=step290 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.290.png';"> <td>290</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.290.mol">6.6872</a></td> <td>-340.5878</td> <td>156.241</td> </tr>
+   <tr id=step291 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.291.png';"> <td>291</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.291.mol">6.7073</a></td> <td>-340.5878</td> <td>156.251</td> </tr>
+   <tr id=step292 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.292.png';"> <td>292</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.292.mol">6.7273</a></td> <td>-340.5878</td> <td>156.262</td> </tr>
+   <tr id=step293 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.293.png';"> <td>293</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.293.mol">6.7473</a></td> <td>-340.5878</td> <td>156.272</td> </tr>
+   <tr id=step294 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.294.png';"> <td>294</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.294.mol">6.7673</a></td> <td>-340.5878</td> <td>156.282</td> </tr>
+   <tr id=step295 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.295.png';"> <td>295</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.295.mol">6.7874</a></td> <td>-340.5878</td> <td>156.292</td> </tr>
+   <tr id=step296 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.296.png';"> <td>296</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.296.mol">6.8074</a></td> <td>-340.5878</td> <td>156.302</td> </tr>
+   <tr id=step297 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.297.png';"> <td>297</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.297.mol">6.8274</a></td> <td>-340.5878</td> <td>156.312</td> </tr>
+   <tr id=step298 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.298.png';"> <td>298</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.298.mol">6.8474</a></td> <td>-340.5878</td> <td>156.322</td> </tr>
+   <tr id=step299 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.299.png';"> <td>299</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.299.mol">6.8675</a></td> <td>-340.5878</td> <td>156.332</td> </tr>
+   <tr id=step300 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.300.png';"> <td>300</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.300.mol">6.8875</a></td> <td>-340.5878</td> <td>156.341</td> </tr>
+   <tr id=step301 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.301.png';"> <td>301</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.301.mol">6.9075</a></td> <td>-340.5878</td> <td>156.351</td> </tr>
+   <tr id=step302 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.302.png';"> <td>302</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.302.mol">6.9275</a></td> <td>-340.5878</td> <td>156.360</td> </tr>
+   <tr id=step303 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.303.png';"> <td>303</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.303.mol">6.9476</a></td> <td>-340.5878</td> <td>156.370</td> </tr>
+   <tr id=step304 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.304.png';"> <td>304</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.304.mol">6.9676</a></td> <td>-340.5878</td> <td>156.379</td> </tr>
+   <tr id=step305 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.305.png';"> <td>305</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.305.mol">6.9876</a></td> <td>-340.5877</td> <td>156.388</td> </tr>
+   <tr id=step306 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.306.png';"> <td>306</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.306.mol">7.0076</a></td> <td>-340.5877</td> <td>156.397</td> </tr>
+   <tr id=step307 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.307.png';"> <td>307</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.307.mol">7.0277</a></td> <td>-340.5877</td> <td>156.406</td> </tr>
+   <tr id=step308 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.308.png';"> <td>308</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.308.mol">7.0477</a></td> <td>-340.5877</td> <td>156.415</td> </tr>
+   <tr id=step309 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.309.png';"> <td>309</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.309.mol">7.0677</a></td> <td>-340.5877</td> <td>156.423</td> </tr>
+   <tr id=step310 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.310.png';"> <td>310</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.310.mol">7.0877</a></td> <td>-340.5877</td> <td>156.432</td> </tr>
+   <tr id=step311 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.311.png';"> <td>311</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.311.mol">7.1078</a></td> <td>-340.5877</td> <td>156.440</td> </tr>
+   <tr id=step312 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.312.png';"> <td>312</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.312.mol">7.1278</a></td> <td>-340.5877</td> <td>156.449</td> </tr>
+   <tr id=step313 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.313.png';"> <td>313</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.313.mol">7.1478</a></td> <td>-340.5877</td> <td>156.457</td> </tr>
+   <tr id=step314 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.314.png';"> <td>314</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.314.mol">7.1678</a></td> <td>-340.5877</td> <td>156.465</td> </tr>
+   <tr id=step315 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.315.png';"> <td>315</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.315.mol">7.1879</a></td> <td>-340.5877</td> <td>156.473</td> </tr>
+   <tr id=step316 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.316.png';"> <td>316</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.316.mol">7.2079</a></td> <td>-340.5877</td> <td>156.481</td> </tr>
+   <tr id=step317 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.317.png';"> <td>317</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.317.mol">7.2279</a></td> <td>-340.5877</td> <td>156.489</td> </tr>
+   <tr id=step318 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.318.png';"> <td>318</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.318.mol">7.2479</a></td> <td>-340.5877</td> <td>156.497</td> </tr>
+   <tr id=step319 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.319.png';"> <td>319</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.319.mol">7.2680</a></td> <td>-340.5877</td> <td>156.504</td> </tr>
+   <tr id=step320 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.320.png';"> <td>320</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.320.mol">7.2880</a></td> <td>-340.5877</td> <td>156.511</td> </tr>
+   <tr id=step321 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.321.png';"> <td>321</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.321.mol">7.3080</a></td> <td>-340.5877</td> <td>156.519</td> </tr>
+   <tr id=step322 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.322.png';"> <td>322</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.322.mol">7.3280</a></td> <td>-340.5877</td> <td>156.526</td> </tr>
+   <tr id=step323 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.323.png';"> <td>323</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.323.mol">7.3481</a></td> <td>-340.5877</td> <td>156.533</td> </tr>
+   <tr id=step324 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.324.png';"> <td>324</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.324.mol">7.3681</a></td> <td>-340.5877</td> <td>156.540</td> </tr>
+   <tr id=step325 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.325.png';"> <td>325</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.325.mol">7.3881</a></td> <td>-340.5877</td> <td>156.546</td> </tr>
+   <tr id=step326 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.326.png';"> <td>326</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.326.mol">7.4081</a></td> <td>-340.5877</td> <td>156.553</td> </tr>
+   <tr id=step327 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.327.png';"> <td>327</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.327.mol">7.4282</a></td> <td>-340.5877</td> <td>156.559</td> </tr>
+   <tr id=step328 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.328.png';"> <td>328</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.328.mol">7.4482</a></td> <td>-340.5877</td> <td>156.566</td> </tr>
+   <tr id=step329 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.329.png';"> <td>329</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.329.mol">7.4682</a></td> <td>-340.5877</td> <td>156.572</td> </tr>
+   <tr id=step330 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.330.png';"> <td>330</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.330.mol">7.4882</a></td> <td>-340.5877</td> <td>156.578</td> </tr>
+   <tr id=step331 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.331.png';"> <td>331</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.331.mol">7.5083</a></td> <td>-340.5877</td> <td>156.584</td> </tr>
+   <tr id=step332 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.332.png';"> <td>332</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.332.mol">7.5283</a></td> <td>-340.5877</td> <td>156.590</td> </tr>
+   <tr id=step333 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.333.png';"> <td>333</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.333.mol">7.5483</a></td> <td>-340.5877</td> <td>156.595</td> </tr>
+   <tr id=step334 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.334.png';"> <td>334</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.334.mol">7.5683</a></td> <td>-340.5877</td> <td>156.601</td> </tr>
+   <tr id=step335 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.335.png';"> <td>335</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.335.mol">7.5884</a></td> <td>-340.5877</td> <td>156.606</td> </tr>
+   <tr id=step336 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.336.png';"> <td>336</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.336.mol">7.6084</a></td> <td>-340.5877</td> <td>156.612</td> </tr>
+   <tr id=step337 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.337.png';"> <td>337</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.337.mol">7.6284</a></td> <td>-340.5877</td> <td>156.617</td> </tr>
+   <tr id=step338 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.338.png';"> <td>338</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.338.mol">7.6484</a></td> <td>-340.5877</td> <td>156.622</td> </tr>
+   <tr id=step339 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.339.png';"> <td>339</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.339.mol">7.6685</a></td> <td>-340.5877</td> <td>156.627</td> </tr>
+   <tr id=step340 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.340.png';"> <td>340</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.340.mol">7.6885</a></td> <td>-340.5877</td> <td>156.632</td> </tr>
+   <tr id=step341 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.341.png';"> <td>341</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.341.mol">7.7085</a></td> <td>-340.5877</td> <td>156.637</td> </tr>
+   <tr id=step342 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.342.png';"> <td>342</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.342.mol">7.7285</a></td> <td>-340.5877</td> <td>156.642</td> </tr>
+   <tr id=step343 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.343.png';"> <td>343</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.343.mol">7.7486</a></td> <td>-340.5876</td> <td>156.647</td> </tr>
+   <tr id=step344 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.344.png';"> <td>344</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.344.mol">7.7686</a></td> <td>-340.5876</td> <td>156.652</td> </tr>
+   <tr id=step345 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.345.png';"> <td>345</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.345.mol">7.7886</a></td> <td>-340.5876</td> <td>156.657</td> </tr>
+   <tr id=step346 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.346.png';"> <td>346</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.346.mol">7.8086</a></td> <td>-340.5876</td> <td>156.662</td> </tr>
+   <tr id=step347 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.347.png';"> <td>347</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.347.mol">7.8287</a></td> <td>-340.5876</td> <td>156.667</td> </tr>
+   <tr id=step348 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.348.png';"> <td>348</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.348.mol">7.8487</a></td> <td>-340.5876</td> <td>156.672</td> </tr>
+   <tr id=step349 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.349.png';"> <td>349</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.349.mol">7.8687</a></td> <td>-340.5876</td> <td>156.677</td> </tr>
+   <tr id=step350 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.350.png';"> <td>350</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.350.mol">7.8887</a></td> <td>-340.5876</td> <td>156.682</td> </tr>
+   <tr id=step351 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.351.png';"> <td>351</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.351.mol">7.9088</a></td> <td>-340.5876</td> <td>156.687</td> </tr>
+   <tr id=step352 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.352.png';"> <td>352</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.352.mol">7.9288</a></td> <td>-340.5876</td> <td>156.692</td> </tr>
+   <tr id=step353 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.353.png';"> <td>353</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.353.mol">7.9488</a></td> <td>-340.5876</td> <td>156.697</td> </tr>
+   <tr id=step354 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.354.png';"> <td>354</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.354.mol">7.9688</a></td> <td>-340.5876</td> <td>156.702</td> </tr>
+   <tr id=step355 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.355.png';"> <td>355</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.355.mol">7.9889</a></td> <td>-340.5876</td> <td>156.706</td> </tr>
+   <tr id=step356 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.356.png';"> <td>356</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.356.mol">8.0089</a></td> <td>-340.5876</td> <td>156.711</td> </tr>
+   <tr id=step357 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.357.png';"> <td>357</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.357.mol">8.0289</a></td> <td>-340.5876</td> <td>156.716</td> </tr>
+   <tr id=step358 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.358.png';"> <td>358</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.358.mol">8.0489</a></td> <td>-340.5876</td> <td>156.721</td> </tr>
+   <tr id=step359 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.359.png';"> <td>359</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.359.mol">8.0690</a></td> <td>-340.5876</td> <td>156.726</td> </tr>
+   <tr id=step360 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.360.png';"> <td>360</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.360.mol">8.0890</a></td> <td>-340.5876</td> <td>156.731</td> </tr>
+   <tr id=step361 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.361.png';"> <td>361</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.361.mol">8.1090</a></td> <td>-340.5876</td> <td>156.736</td> </tr>
+   <tr id=step362 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.362.png';"> <td>362</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.362.mol">8.1290</a></td> <td>-340.5876</td> <td>156.740</td> </tr>
+   <tr id=step363 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.363.png';"> <td>363</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.363.mol">8.1491</a></td> <td>-340.5876</td> <td>156.745</td> </tr>
+   <tr id=step364 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.364.png';"> <td>364</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.364.mol">8.1691</a></td> <td>-340.5876</td> <td>156.750</td> </tr>
+   <tr id=step365 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.365.png';"> <td>365</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.365.mol">8.1891</a></td> <td>-340.5876</td> <td>156.754</td> </tr>
+   <tr id=step366 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.366.png';"> <td>366</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.366.mol">8.2091</a></td> <td>-340.5876</td> <td>156.759</td> </tr>
+   <tr id=step367 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.367.png';"> <td>367</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.367.mol">8.2292</a></td> <td>-340.5876</td> <td>156.764</td> </tr>
+   <tr id=step368 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.368.png';"> <td>368</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.368.mol">8.2492</a></td> <td>-340.5876</td> <td>156.768</td> </tr>
+   <tr id=step369 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.369.png';"> <td>369</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.369.mol">8.2692</a></td> <td>-340.5876</td> <td>156.773</td> </tr>
+   <tr id=step370 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.370.png';"> <td>370</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.370.mol">8.2892</a></td> <td>-340.5876</td> <td>156.777</td> </tr>
+   <tr id=step371 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.371.png';"> <td>371</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.371.mol">8.3093</a></td> <td>-340.5876</td> <td>156.782</td> </tr>
+   <tr id=step372 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.372.png';"> <td>372</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.372.mol">8.3293</a></td> <td>-340.5876</td> <td>156.786</td> </tr>
+   <tr id=step373 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.373.png';"> <td>373</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.373.mol">8.3493</a></td> <td>-340.5876</td> <td>156.791</td> </tr>
+   <tr id=step374 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.374.png';"> <td>374</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.374.mol">8.3693</a></td> <td>-340.5876</td> <td>156.795</td> </tr>
+   <tr id=step375 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.375.png';"> <td>375</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.375.mol">8.3894</a></td> <td>-340.5876</td> <td>156.800</td> </tr>
+   <tr id=step376 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.376.png';"> <td>376</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.376.mol">8.4094</a></td> <td>-340.5876</td> <td>156.804</td> </tr>
+   <tr id=step377 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.377.png';"> <td>377</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.377.mol">8.4294</a></td> <td>-340.5876</td> <td>156.808</td> </tr>
+   <tr id=step378 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.378.png';"> <td>378</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.378.mol">8.4494</a></td> <td>-340.5876</td> <td>156.813</td> </tr>
+   <tr id=step379 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.379.png';"> <td>379</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.379.mol">8.4695</a></td> <td>-340.5876</td> <td>156.817</td> </tr>
+   <tr id=step380 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.380.png';"> <td>380</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.380.mol">8.4895</a></td> <td>-340.5876</td> <td>156.821</td> </tr>
+   <tr id=step381 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.381.png';"> <td>381</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.381.mol">8.5095</a></td> <td>-340.5876</td> <td>156.825</td> </tr>
+   <tr id=step382 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.382.png';"> <td>382</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.382.mol">8.5295</a></td> <td>-340.5876</td> <td>156.829</td> </tr>
+   <tr id=step383 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.383.png';"> <td>383</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.383.mol">8.5496</a></td> <td>-340.5876</td> <td>156.834</td> </tr>
+   <tr id=step384 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.384.png';"> <td>384</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.384.mol">8.5696</a></td> <td>-340.5876</td> <td>156.838</td> </tr>
+   <tr id=step385 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.385.png';"> <td>385</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.385.mol">8.5896</a></td> <td>-340.5876</td> <td>156.842</td> </tr>
+   <tr id=step386 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.386.png';"> <td>386</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.386.mol">8.6096</a></td> <td>-340.5876</td> <td>156.846</td> </tr>
+   <tr id=step387 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.387.png';"> <td>387</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.387.mol">8.6297</a></td> <td>-340.5876</td> <td>156.850</td> </tr>
+   <tr id=step388 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.388.png';"> <td>388</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.388.mol">8.6497</a></td> <td>-340.5876</td> <td>156.854</td> </tr>
+   <tr id=step389 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.389.png';"> <td>389</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.389.mol">8.6697</a></td> <td>-340.5876</td> <td>156.858</td> </tr>
+   <tr id=step390 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.390.png';"> <td>390</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.390.mol">8.6897</a></td> <td>-340.5876</td> <td>156.862</td> </tr>
+   <tr id=step391 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.391.png';"> <td>391</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.391.mol">8.7098</a></td> <td>-340.5876</td> <td>156.866</td> </tr>
+   <tr id=step392 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.392.png';"> <td>392</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.392.mol">8.7298</a></td> <td>-340.5876</td> <td>156.870</td> </tr>
+   <tr id=step393 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.393.png';"> <td>393</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.393.mol">8.7498</a></td> <td>-340.5876</td> <td>156.873</td> </tr>
+   <tr id=step394 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.394.png';"> <td>394</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.394.mol">8.7698</a></td> <td>-340.5876</td> <td>156.877</td> </tr>
+   <tr id=step395 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.395.png';"> <td>395</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.395.mol">8.7899</a></td> <td>-340.5876</td> <td>156.881</td> </tr>
+   <tr id=step396 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.396.png';"> <td>396</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.396.mol">8.8099</a></td> <td>-340.5876</td> <td>156.885</td> </tr>
+   <tr id=step397 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.397.png';"> <td>397</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.397.mol">8.8299</a></td> <td>-340.5876</td> <td>156.889</td> </tr>
+   <tr id=step398 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.398.png';"> <td>398</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.398.mol">8.8499</a></td> <td>-340.5876</td> <td>156.892</td> </tr>
+   <tr id=step399 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.399.png';"> <td>399</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.399.mol">8.8700</a></td> <td>-340.5876</td> <td>156.896</td> </tr>
+   <tr id=step400 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.400.png';"> <td>400</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.400.mol">8.8900</a></td> <td>-340.5876</td> <td>156.900</td> </tr>
+   <tr id=step401 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.401.png';"> <td>401</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.401.mol">8.9100</a></td> <td>-340.5876</td> <td>156.904</td> </tr>
+   <tr id=step402 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.402.png';"> <td>402</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.402.mol">8.9300</a></td> <td>-340.5876</td> <td>156.907</td> </tr>
+   <tr id=step403 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.403.png';"> <td>403</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.403.mol">8.9501</a></td> <td>-340.5875</td> <td>156.911</td> </tr>
+   <tr id=step404 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.404.png';"> <td>404</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.404.mol">8.9701</a></td> <td>-340.5875</td> <td>156.914</td> </tr>
+   <tr id=step405 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.405.png';"> <td>405</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.405.mol">8.9901</a></td> <td>-340.5875</td> <td>156.918</td> </tr>
+   <tr id=step406 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.406.png';"> <td>406</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.406.mol">9.0101</a></td> <td>-340.5875</td> <td>156.921</td> </tr>
+   <tr id=step407 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.407.png';"> <td>407</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.407.mol">9.0302</a></td> <td>-340.5875</td> <td>156.925</td> </tr>
+   <tr id=step408 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.408.png';"> <td>408</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.408.mol">9.0502</a></td> <td>-340.5875</td> <td>156.928</td> </tr>
+   <tr id=step409 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.409.png';"> <td>409</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.409.mol">9.0702</a></td> <td>-340.5875</td> <td>156.932</td> </tr>
+   <tr id=step410 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.410.png';"> <td>410</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.410.mol">9.0902</a></td> <td>-340.5875</td> <td>156.935</td> </tr>
+   <tr id=step411 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.411.png';"> <td>411</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.411.mol">9.1103</a></td> <td>-340.5875</td> <td>156.939</td> </tr>
+   <tr id=step412 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.412.png';"> <td>412</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.412.mol">9.1303</a></td> <td>-340.5875</td> <td>156.942</td> </tr>
+   <tr id=step413 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.413.png';"> <td>413</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.413.mol">9.1503</a></td> <td>-340.5875</td> <td>156.946</td> </tr>
+   <tr id=step414 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.414.png';"> <td>414</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.414.mol">9.1703</a></td> <td>-340.5875</td> <td>156.949</td> </tr>
+   <tr id=step415 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.415.png';"> <td>415</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.415.mol">9.1904</a></td> <td>-340.5875</td> <td>156.952</td> </tr>
+   <tr id=step416 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.416.png';"> <td>416</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.416.mol">9.2104</a></td> <td>-340.5875</td> <td>156.956</td> </tr>
+   <tr id=step417 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.417.png';"> <td>417</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.417.mol">9.2304</a></td> <td>-340.5875</td> <td>156.959</td> </tr>
+   <tr id=step418 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.418.png';"> <td>418</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.418.mol">9.2504</a></td> <td>-340.5875</td> <td>156.962</td> </tr>
+   <tr id=step419 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.419.png';"> <td>419</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.419.mol">9.2705</a></td> <td>-340.5875</td> <td>156.965</td> </tr>
+   <tr id=step420 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.420.png';"> <td>420</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.420.mol">9.2905</a></td> <td>-340.5875</td> <td>156.969</td> </tr>
+   <tr id=step421 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.421.png';"> <td>421</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.421.mol">9.3105</a></td> <td>-340.5875</td> <td>156.972</td> </tr>
+   <tr id=step422 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.422.png';"> <td>422</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.422.mol">9.3305</a></td> <td>-340.5875</td> <td>156.975</td> </tr>
+   <tr id=step423 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.423.png';"> <td>423</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.423.mol">9.3506</a></td> <td>-340.5875</td> <td>156.978</td> </tr>
+   <tr id=step424 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.424.png';"> <td>424</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.424.mol">9.3706</a></td> <td>-340.5875</td> <td>156.981</td> </tr>
+   <tr id=step425 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.425.png';"> <td>425</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.425.mol">9.3906</a></td> <td>-340.5875</td> <td>156.984</td> </tr>
+   <tr id=step426 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.426.png';"> <td>426</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.426.mol">9.4106</a></td> <td>-340.5875</td> <td>156.987</td> </tr>
+   <tr id=step427 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.427.png';"> <td>427</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.427.mol">9.4307</a></td> <td>-340.5875</td> <td>156.991</td> </tr>
+   <tr id=step428 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.428.png';"> <td>428</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.428.mol">9.4507</a></td> <td>-340.5875</td> <td>156.994</td> </tr>
+   <tr id=step429 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.429.png';"> <td>429</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.429.mol">9.4707</a></td> <td>-340.5875</td> <td>156.997</td> </tr>
+   <tr id=step430 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.430.png';"> <td>430</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.430.mol">9.4907</a></td> <td>-340.5875</td> <td>157.000</td> </tr>
+   <tr id=step431 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.431.png';"> <td>431</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.431.mol">9.5108</a></td> <td>-340.5875</td> <td>157.003</td> </tr>
+   <tr id=step432 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.432.png';"> <td>432</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.432.mol">9.5308</a></td> <td>-340.5875</td> <td>157.006</td> </tr>
+   <tr id=step433 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.433.png';"> <td>433</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.433.mol">9.5508</a></td> <td>-340.5875</td> <td>157.008</td> </tr>
+   <tr id=step434 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.434.png';"> <td>434</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.434.mol">9.5708</a></td> <td>-340.5875</td> <td>157.011</td> </tr>
+   <tr id=step435 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.435.png';"> <td>435</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.435.mol">9.5909</a></td> <td>-340.5875</td> <td>157.014</td> </tr>
+   <tr id=step436 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.436.png';"> <td>436</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.436.mol">9.6109</a></td> <td>-340.5875</td> <td>157.017</td> </tr>
+   <tr id=step437 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.437.png';"> <td>437</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.437.mol">9.6309</a></td> <td>-340.5875</td> <td>157.020</td> </tr>
+   <tr id=step438 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.438.png';"> <td>438</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.438.mol">9.6509</a></td> <td>-340.5875</td> <td>157.023</td> </tr>
+   <tr id=step439 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.439.png';"> <td>439</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.439.mol">9.6710</a></td> <td>-340.5875</td> <td>157.026</td> </tr>
+   <tr id=step440 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.440.png';"> <td>440</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.440.mol">9.6910</a></td> <td>-340.5875</td> <td>157.029</td> </tr>
+   <tr id=step441 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.441.png';"> <td>441</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.441.mol">9.7110</a></td> <td>-340.5875</td> <td>157.031</td> </tr>
+   <tr id=step442 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.442.png';"> <td>442</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.442.mol">9.7310</a></td> <td>-340.5875</td> <td>157.034</td> </tr>
+   <tr id=step443 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.443.png';"> <td>443</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.443.mol">9.7511</a></td> <td>-340.5875</td> <td>157.037</td> </tr>
+   <tr id=step444 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.444.png';"> <td>444</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.444.mol">9.7711</a></td> <td>-340.5875</td> <td>157.040</td> </tr>
+   <tr id=step445 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.445.png';"> <td>445</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.445.mol">9.7911</a></td> <td>-340.5875</td> <td>157.042</td> </tr>
+   <tr id=step446 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.446.png';"> <td>446</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.446.mol">9.8111</a></td> <td>-340.5875</td> <td>157.045</td> </tr>
+   <tr id=step447 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.447.png';"> <td>447</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.447.mol">9.8312</a></td> <td>-340.5875</td> <td>157.048</td> </tr>
+   <tr id=step448 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.448.png';"> <td>448</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.448.mol">9.8512</a></td> <td>-340.5875</td> <td>157.050</td> </tr>
+   <tr id=step449 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.449.png';"> <td>449</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.449.mol">9.8712</a></td> <td>-340.5875</td> <td>157.053</td> </tr>
+   <tr id=step450 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.450.png';"> <td>450</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.450.mol">9.8912</a></td> <td>-340.5875</td> <td>157.056</td> </tr>
+   <tr id=step451 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.451.png';"> <td>451</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.451.mol">9.9113</a></td> <td>-340.5875</td> <td>157.058</td> </tr>
+   <tr id=step452 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.452.png';"> <td>452</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.452.mol">9.9313</a></td> <td>-340.5875</td> <td>157.061</td> </tr>
+   <tr id=step453 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.453.png';"> <td>453</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.453.mol">9.9513</a></td> <td>-340.5875</td> <td>157.064</td> </tr>
+   <tr id=step454 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.454.png';"> <td>454</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.454.mol">9.9713</a></td> <td>-340.5875</td> <td>157.066</td> </tr>
+   <tr id=step455 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.455.png';"> <td>455</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.455.mol">9.9914</a></td> <td>-340.5875</td> <td>157.069</td> </tr>
+   <tr id=step456 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.456.png';"> <td>456</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.456.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step457 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.457.png';"> <td>457</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.457.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step458 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.458.png';"> <td>458</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.458.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step459 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.459.png';"> <td>459</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.459.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step460 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.460.png';"> <td>460</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.460.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step461 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.461.png';"> <td>461</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.461.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step462 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.462.png';"> <td>462</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.462.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step463 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.463.png';"> <td>463</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.463.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step464 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.464.png';"> <td>464</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.464.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step465 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.465.png';"> <td>465</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.465.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step466 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.466.png';"> <td>466</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.466.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step467 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.467.png';"> <td>467</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.467.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step468 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.468.png';"> <td>468</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.468.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step469 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.469.png';"> <td>469</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.469.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step470 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.470.png';"> <td>470</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.470.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step471 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.471.png';"> <td>471</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.471.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step472 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.472.png';"> <td>472</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.472.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step473 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.473.png';"> <td>473</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.473.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step474 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.474.png';"> <td>474</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.474.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step475 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.475.png';"> <td>475</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.475.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step476 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.476.png';"> <td>476</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.476.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step477 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.477.png';"> <td>477</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.477.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step478 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.478.png';"> <td>478</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.478.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step479 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.479.png';"> <td>479</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.479.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step480 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.480.png';"> <td>480</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.480.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step481 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.481.png';"> <td>481</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.481.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step482 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.482.png';"> <td>482</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.482.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step483 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.483.png';"> <td>483</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.483.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step484 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.484.png';"> <td>484</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.484.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step485 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.485.png';"> <td>485</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.485.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step486 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.486.png';"> <td>486</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.486.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step487 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.487.png';"> <td>487</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.487.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step488 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.488.png';"> <td>488</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.488.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step489 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.489.png';"> <td>489</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.489.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step490 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.490.png';"> <td>490</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.490.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step491 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.491.png';"> <td>491</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.491.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step492 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.492.png';"> <td>492</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.492.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step493 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.493.png';"> <td>493</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.493.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step494 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.494.png';"> <td>494</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.494.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step495 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.495.png';"> <td>495</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.495.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step496 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.496.png';"> <td>496</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.496.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step497 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.497.png';"> <td>497</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.497.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step498 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.498.png';"> <td>498</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.498.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step499 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.499.png';"> <td>499</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.499.mol">-340.5875</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step500 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.500.png';"> <td>500</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.500.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step501 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.501.png';"> <td>501</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.501.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step502 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.502.png';"> <td>502</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.502.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step503 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.503.png';"> <td>503</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.503.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step504 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.504.png';"> <td>504</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.504.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step505 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.505.png';"> <td>505</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.505.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step506 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.506.png';"> <td>506</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.506.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step507 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.507.png';"> <td>507</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.507.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step508 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.508.png';"> <td>508</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.508.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step509 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.509.png';"> <td>509</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.509.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step510 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.510.png';"> <td>510</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.510.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step511 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.511.png';"> <td>511</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.511.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step512 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.512.png';"> <td>512</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.512.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step513 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.513.png';"> <td>513</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.513.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step514 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.514.png';"> <td>514</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.514.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step515 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.515.png';"> <td>515</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.515.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step516 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.516.png';"> <td>516</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.516.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step517 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.517.png';"> <td>517</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.517.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step518 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.518.png';"> <td>518</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.518.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step519 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.519.png';"> <td>519</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.519.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step520 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.520.png';"> <td>520</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.520.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step521 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.521.png';"> <td>521</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.521.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step522 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.522.png';"> <td>522</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.522.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step523 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.523.png';"> <td>523</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.523.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step524 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.524.png';"> <td>524</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.524.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step525 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.525.png';"> <td>525</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.525.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step526 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.526.png';"> <td>526</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.526.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step527 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.527.png';"> <td>527</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.527.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step528 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.528.png';"> <td>528</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.528.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step529 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.529.png';"> <td>529</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.529.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step530 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.530.png';"> <td>530</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.530.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step531 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.531.png';"> <td>531</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.531.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step532 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.532.png';"> <td>532</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.532.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step533 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.533.png';"> <td>533</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.533.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step534 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.534.png';"> <td>534</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.534.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step535 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.535.png';"> <td>535</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.535.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step536 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.536.png';"> <td>536</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.536.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step537 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.537.png';"> <td>537</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.537.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step538 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.538.png';"> <td>538</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.538.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step539 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.539.png';"> <td>539</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.539.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step540 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.540.png';"> <td>540</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.540.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step541 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.541.png';"> <td>541</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.541.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step542 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.542.png';"> <td>542</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.542.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step543 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.543.png';"> <td>543</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.543.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step544 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.544.png';"> <td>544</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.544.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step545 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.545.png';"> <td>545</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.545.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step546 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.546.png';"> <td>546</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.546.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step547 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.547.png';"> <td>547</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.547.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step548 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.548.png';"> <td>548</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.548.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step549 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.549.png';"> <td>549</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.549.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step550 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.550.png';"> <td>550</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.550.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step551 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.551.png';"> <td>551</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.551.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step552 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.552.png';"> <td>552</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.552.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step553 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.553.png';"> <td>553</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.553.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step554 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.554.png';"> <td>554</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.554.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step555 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.555.png';"> <td>555</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.555.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step556 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.556.png';"> <td>556</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.556.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step557 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.557.png';"> <td>557</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.557.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step558 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.558.png';"> <td>558</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.558.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step559 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.559.png';"> <td>559</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.559.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step560 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.560.png';"> <td>560</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.560.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step561 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.561.png';"> <td>561</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.561.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step562 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.562.png';"> <td>562</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.562.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step563 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.563.png';"> <td>563</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.563.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step564 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.564.png';"> <td>564</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.564.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step565 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.565.png';"> <td>565</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.565.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step566 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.566.png';"> <td>566</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.566.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step567 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.567.png';"> <td>567</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.567.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step568 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.568.png';"> <td>568</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.568.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step569 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.569.png';"> <td>569</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.569.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step570 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.570.png';"> <td>570</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.570.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step571 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.571.png';"> <td>571</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.571.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step572 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.572.png';"> <td>572</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.572.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step573 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.573.png';"> <td>573</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.573.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step574 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.574.png';"> <td>574</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.574.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step575 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.575.png';"> <td>575</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.575.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step576 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.576.png';"> <td>576</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.576.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step577 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.577.png';"> <td>577</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.577.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step578 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.578.png';"> <td>578</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.578.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step579 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.579.png';"> <td>579</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.579.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step580 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.580.png';"> <td>580</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.580.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step581 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.581.png';"> <td>581</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.581.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step582 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.582.png';"> <td>582</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.582.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step583 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.583.png';"> <td>583</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.583.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step584 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.584.png';"> <td>584</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.584.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step585 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.585.png';"> <td>585</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.585.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step586 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.586.png';"> <td>586</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.586.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step587 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.587.png';"> <td>587</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.587.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step588 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.588.png';"> <td>588</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.588.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step589 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.589.png';"> <td>589</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.589.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step590 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.590.png';"> <td>590</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.590.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step591 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.591.png';"> <td>591</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.591.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step592 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.592.png';"> <td>592</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.592.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step593 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.593.png';"> <td>593</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.593.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step594 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.594.png';"> <td>594</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.594.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step595 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.595.png';"> <td>595</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.595.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step596 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.596.png';"> <td>596</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.596.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step597 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.597.png';"> <td>597</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.597.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step598 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.598.png';"> <td>598</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.598.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step599 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.599.png';"> <td>599</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.599.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step600 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.600.png';"> <td>600</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.600.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step601 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.601.png';"> <td>601</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.601.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step602 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.602.png';"> <td>602</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.602.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step603 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.603.png';"> <td>603</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.603.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step604 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.604.png';"> <td>604</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.604.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step605 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.605.png';"> <td>605</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.605.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step606 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.606.png';"> <td>606</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.606.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step607 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.607.png';"> <td>607</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.607.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step608 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.608.png';"> <td>608</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.608.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step609 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.609.png';"> <td>609</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.609.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step610 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.610.png';"> <td>610</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.610.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step611 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.611.png';"> <td>611</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.611.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step612 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.612.png';"> <td>612</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.612.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step613 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.613.png';"> <td>613</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.613.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step614 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.614.png';"> <td>614</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.614.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step615 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.615.png';"> <td>615</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.615.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step616 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.616.png';"> <td>616</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.616.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step617 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.617.png';"> <td>617</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.617.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step618 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.618.png';"> <td>618</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.618.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step619 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.619.png';"> <td>619</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.619.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step620 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.620.png';"> <td>620</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.620.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step621 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.621.png';"> <td>621</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.621.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step622 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.622.png';"> <td>622</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.622.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step623 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.623.png';"> <td>623</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.623.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step624 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.624.png';"> <td>624</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.624.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step625 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.625.png';"> <td>625</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.625.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step626 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.626.png';"> <td>626</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.626.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step627 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.627.png';"> <td>627</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.627.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step628 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.628.png';"> <td>628</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.628.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step629 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.629.png';"> <td>629</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.629.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step630 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.630.png';"> <td>630</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.630.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step631 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.631.png';"> <td>631</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.631.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step632 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.632.png';"> <td>632</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.632.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step633 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.633.png';"> <td>633</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.633.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step634 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.634.png';"> <td>634</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.634.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step635 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.635.png';"> <td>635</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.635.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step636 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.636.png';"> <td>636</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.636.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step637 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.637.png';"> <td>637</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.637.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step638 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.638.png';"> <td>638</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.638.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step639 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.639.png';"> <td>639</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.639.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step640 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.640.png';"> <td>640</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.640.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step641 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.641.png';"> <td>641</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.641.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step642 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.642.png';"> <td>642</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.642.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step643 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.643.png';"> <td>643</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.643.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step644 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.644.png';"> <td>644</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.644.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step645 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.645.png';"> <td>645</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.645.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step646 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.646.png';"> <td>646</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.646.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step647 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.647.png';"> <td>647</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.647.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step648 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.648.png';"> <td>648</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.648.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step649 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.649.png';"> <td>649</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.649.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step650 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.650.png';"> <td>650</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.650.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step651 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.651.png';"> <td>651</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.651.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step652 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.652.png';"> <td>652</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.652.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step653 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.653.png';"> <td>653</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.653.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step654 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.654.png';"> <td>654</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.654.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step655 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.655.png';"> <td>655</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.655.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step656 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.656.png';"> <td>656</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.656.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step657 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.657.png';"> <td>657</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.657.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step658 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.658.png';"> <td>658</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.658.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step659 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.659.png';"> <td>659</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.659.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step660 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.660.png';"> <td>660</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.660.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step661 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.661.png';"> <td>661</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.661.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step662 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.662.png';"> <td>662</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.662.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step663 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.663.png';"> <td>663</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.663.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step664 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.664.png';"> <td>664</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.664.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step665 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.665.png';"> <td>665</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.665.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step666 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.666.png';"> <td>666</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.666.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step667 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.667.png';"> <td>667</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.667.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step668 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.668.png';"> <td>668</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.668.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step669 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.669.png';"> <td>669</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.669.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step670 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.670.png';"> <td>670</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.670.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step671 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.671.png';"> <td>671</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.671.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step672 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.672.png';"> <td>672</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.672.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step673 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.673.png';"> <td>673</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.673.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step674 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.674.png';"> <td>674</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.674.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step675 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.675.png';"> <td>675</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.675.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step676 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.676.png';"> <td>676</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.676.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step677 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.677.png';"> <td>677</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.677.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step678 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.678.png';"> <td>678</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.678.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step679 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.679.png';"> <td>679</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.679.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step680 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.680.png';"> <td>680</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.680.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step681 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.681.png';"> <td>681</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.681.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step682 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.682.png';"> <td>682</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.682.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step683 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.683.png';"> <td>683</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.683.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step684 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.684.png';"> <td>684</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.684.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step685 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.685.png';"> <td>685</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.685.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step686 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.686.png';"> <td>686</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.686.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step687 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.687.png';"> <td>687</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.687.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step688 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.688.png';"> <td>688</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.688.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step689 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.689.png';"> <td>689</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.689.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step690 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.690.png';"> <td>690</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.690.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step691 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.691.png';"> <td>691</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.691.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step692 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.692.png';"> <td>692</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.692.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step693 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.693.png';"> <td>693</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.693.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step694 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.694.png';"> <td>694</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.694.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step695 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.695.png';"> <td>695</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.695.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step696 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.696.png';"> <td>696</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.696.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step697 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.697.png';"> <td>697</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.697.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step698 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.698.png';"> <td>698</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.698.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step699 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.699.png';"> <td>699</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.699.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step700 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.700.png';"> <td>700</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.700.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step701 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.701.png';"> <td>701</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.701.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step702 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.702.png';"> <td>702</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.702.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step703 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.703.png';"> <td>703</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.703.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step704 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.704.png';"> <td>704</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.704.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step705 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.705.png';"> <td>705</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.705.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step706 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.706.png';"> <td>706</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.706.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step707 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.707.png';"> <td>707</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.707.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step708 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.708.png';"> <td>708</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.708.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step709 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.709.png';"> <td>709</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.709.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step710 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.710.png';"> <td>710</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.710.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step711 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.711.png';"> <td>711</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.711.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step712 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.712.png';"> <td>712</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.712.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step713 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.713.png';"> <td>713</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.713.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step714 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.714.png';"> <td>714</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.714.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step715 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.715.png';"> <td>715</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.715.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step716 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.716.png';"> <td>716</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.716.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step717 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.717.png';"> <td>717</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.717.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step718 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.718.png';"> <td>718</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.718.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step719 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.719.png';"> <td>719</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.719.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step720 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.720.png';"> <td>720</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.720.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step721 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.721.png';"> <td>721</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.721.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step722 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.722.png';"> <td>722</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.722.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step723 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.723.png';"> <td>723</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.723.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step724 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.724.png';"> <td>724</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.724.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step725 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.725.png';"> <td>725</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.725.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step726 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.726.png';"> <td>726</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.726.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step727 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.727.png';"> <td>727</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.727.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step728 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.728.png';"> <td>728</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.728.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step729 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.729.png';"> <td>729</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.729.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step730 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.730.png';"> <td>730</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.730.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step731 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.731.png';"> <td>731</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.731.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step732 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.732.png';"> <td>732</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.732.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step733 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.733.png';"> <td>733</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.733.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step734 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.734.png';"> <td>734</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.734.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step735 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.735.png';"> <td>735</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.735.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step736 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.736.png';"> <td>736</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.736.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step737 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.737.png';"> <td>737</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.737.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step738 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.738.png';"> <td>738</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.738.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step739 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.739.png';"> <td>739</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.739.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step740 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.740.png';"> <td>740</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.740.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step741 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.741.png';"> <td>741</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.741.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step742 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.742.png';"> <td>742</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.742.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step743 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.743.png';"> <td>743</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.743.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step744 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.744.png';"> <td>744</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.744.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step745 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.745.png';"> <td>745</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.745.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step746 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.746.png';"> <td>746</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.746.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step747 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.747.png';"> <td>747</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.747.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step748 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.748.png';"> <td>748</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.748.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step749 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.749.png';"> <td>749</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.749.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step750 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.750.png';"> <td>750</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.750.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step751 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.751.png';"> <td>751</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.751.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step752 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.752.png';"> <td>752</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.752.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step753 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.753.png';"> <td>753</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.753.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step754 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.754.png';"> <td>754</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.754.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step755 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.755.png';"> <td>755</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.755.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step756 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.756.png';"> <td>756</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.756.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step757 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.757.png';"> <td>757</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.757.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step758 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.758.png';"> <td>758</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.758.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step759 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.759.png';"> <td>759</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.759.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step760 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.760.png';"> <td>760</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.760.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step761 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.761.png';"> <td>761</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.761.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step762 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.762.png';"> <td>762</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.762.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step763 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.763.png';"> <td>763</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.763.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step764 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.764.png';"> <td>764</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.764.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step765 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.765.png';"> <td>765</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.765.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step766 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.766.png';"> <td>766</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.766.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step767 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.767.png';"> <td>767</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.767.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step768 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.768.png';"> <td>768</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.768.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step769 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.769.png';"> <td>769</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.769.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step770 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.770.png';"> <td>770</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.770.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step771 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.771.png';"> <td>771</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.771.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step772 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.772.png';"> <td>772</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.772.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step773 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.773.png';"> <td>773</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.773.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step774 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.774.png';"> <td>774</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.774.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step775 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.775.png';"> <td>775</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.775.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step776 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.776.png';"> <td>776</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.776.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step777 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.777.png';"> <td>777</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.777.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step778 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.778.png';"> <td>778</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.778.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step779 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.779.png';"> <td>779</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.779.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step780 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.780.png';"> <td>780</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.780.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step781 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.781.png';"> <td>781</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.781.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step782 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.782.png';"> <td>782</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.782.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step783 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.783.png';"> <td>783</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.783.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step784 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.784.png';"> <td>784</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.784.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step785 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.785.png';"> <td>785</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.785.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step786 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.786.png';"> <td>786</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.786.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step787 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.787.png';"> <td>787</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.787.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step788 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.788.png';"> <td>788</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.788.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step789 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.789.png';"> <td>789</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.789.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step790 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.790.png';"> <td>790</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.790.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step791 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.791.png';"> <td>791</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.791.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step792 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.792.png';"> <td>792</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.792.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step793 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.793.png';"> <td>793</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.793.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step794 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.794.png';"> <td>794</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.794.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step795 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.795.png';"> <td>795</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.795.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step796 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.796.png';"> <td>796</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.796.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step797 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.797.png';"> <td>797</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.797.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step798 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.798.png';"> <td>798</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.798.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step799 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.799.png';"> <td>799</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.799.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+   <tr id=step800 onMouseOver="document.show1.src='img/Ph-N2+-scan-d090-169-n800.800.png';"> <td>800</td> <td><a href="mol/Ph-N2+-scan-d090-169-n800.800.mol">-340.5874</a></td> <td>0.0000</td> <td>894369.520</td> </tr>
+  </table></article>
+ <aside id=aside1>
+  <img width=600 name=Eh id=Eh src="img/Ph-N2+-scan-d090-169-n800.png"><br/>
+  <img width=300 name=show1 id=show1 src="img/Ph-N2+-scan-d090-169-n800.001.png">
+  <span id="x"></span>
+ </aside>
+<script type="text/javascript"> var myImg = document.getElementById("Eh"); myImg.onmousemove = GetCoordinates; </script></body></html>
