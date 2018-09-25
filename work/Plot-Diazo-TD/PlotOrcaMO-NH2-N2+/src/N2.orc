@@ -1,0 +1,8 @@
+! B3LYP/G aug-cc-pVDZ TightSCF TightOpt
+%scf MaxIter 1000 end
+%geom MaxIter 1000 end
+* xyz 0 1
+  N   0.42709049402407     -1.33389600028307      0.05599770622790
+  N   0.63260147896238     -2.46750176117064      0.05606136755812
+
+*
