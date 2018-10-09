@@ -2,7 +2,7 @@
 echo "<html>" > index-auto.html
 echo "<head><meta charset=\"utf-8\"/></head>" >> index-auto.html
 echo "<body>" >> index-auto.html
-echo "<h3>Молекулярные орбитали Ph-N<sub>2</sub><sup>+</sup>:</h3>" >> index-auto.html
+echo "<h3>Молекулярные орбитали NH<sub>2</sub>N<sub>2</sub><sup>+</sup>: </h3>" >> index-auto.html
 echo "<ul>" >> index-auto.html
 
 list=`ls MO*.avi`
